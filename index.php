@@ -143,12 +143,42 @@
                         точно контролировать качество каждой единицы товара.</p>
                 </section>
                 <div class="product-presentation-block__content-tile">
-                    <div class="image wide"><a href="#"><img src="img/products-1.jpg" alt="product category pics" style="width: 700px;height: 240px"></a></div>
-                    <div class="image tall"><a href="#"><img src="img/products-2.jpg" alt="product category pics" style="width: 340px;height: 740px"></a></div>
-                    <div class="image"><a href="#"><img src="img/products-3.jpg" alt="product category pics" style="width: 345px;height: 240px"></a></div>
-                    <div class="image"><a href="#"><img src="img/products-4.jpg" alt="product category pics" style="width: 345px;height: 240px"></a></div>
-                    <div class="image"><a href="#"><img src="img/products-5.jpg" alt="product category pics" style="width: 345px;height: 240px"></a></div>
-                    <div class="image"><a href="#"><img src="img/products-6.jpg" alt="product category pics" style="width: 345px;height: 240px"></a></div>
+                    <a class="image wide">
+                        <img src="img/products-1.jpg" alt="product category pics" style="width: 700px;height: 240px">
+                        <div class="product-title-marker">
+                            Инженерная доска
+                        </div>
+                    </a>
+                    <a class="image tall">
+                        <img src="img/products-2.jpg" alt="product category pics" style="width: 340px;height: 740px">
+                        <div class="product-title-marker">
+                            Стеновые панели
+                        </div>
+                    </a>
+                    <a class="image">
+                        <img src="img/products-3.jpg" alt="product category pics" style="width: 345px;height: 240px">
+                        <div class="product-title-marker">
+                            Массивная доска
+                        </div>
+                    </a>
+                    <a class="image">
+                        <img src="img/products-4.jpg" alt="product category pics" style="width: 345px;height: 240px">
+                        <div class="product-title-marker">
+                            Модульный паркет
+                        </div>
+                    </a>
+                    <a class="image">
+                        <img src="img/products-5.jpg" alt="product category pics" style="width: 345px;height: 240px">
+                        <div class="product-title-marker"  style="font-size: 22px;line-height: 27px">
+                            Художественный паркет
+                        </div>
+                    </a>
+                    <a class="image">
+                        <img src="img/products-6.jpg" alt="product category pics" style="width: 345px;height: 240px">
+                        <div class="product-title-marker">
+                            Паркет-ёлка
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

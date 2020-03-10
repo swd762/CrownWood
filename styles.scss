@@ -219,15 +219,37 @@
     grid-template-rows: 240px 240px 240px;
     grid-gap: 10px;
     .image {
+      display: block;
       overflow:hidden;
       position: relative;
+      cursor: pointer;
+      .product-title-marker {
+        position: absolute;
+        background-color: #14282F;
+        color: #fff;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 500;
+        padding: 18px 20px;
+        top:50px;
+        left: 0;
+      }
+      &:hover {
+        .product-title-marker {
+          background-color: yellow;
+          color: #14282F;
+          transition: all 1s ease-out;
+        }
+      }
+
     }
     .image img {
       transition: all 1s ease-out;
     }
 
-    .image img:hover{
-      transform: scale(1.2);
+    .image:hover{
+      img {transform: scale(1.2);}
+
     }
     .wide {
       grid-column-start: 1;
