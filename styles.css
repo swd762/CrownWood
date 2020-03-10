@@ -156,4 +156,25 @@
     .advantages-block__content .advantages-block__content-col .card--margin {
       margin-bottom: 60px; }
 
+.product-presentation-block__content .product-presentation-block__content-tile {
+  display: grid;
+  grid-template-columns: 345px 345px 340px;
+  grid-template-rows: 240px 240px 240px;
+  grid-gap: 10px; }
+  .product-presentation-block__content .product-presentation-block__content-tile .image {
+    overflow: hidden;
+    position: relative; }
+  .product-presentation-block__content .product-presentation-block__content-tile .image img {
+    transition: all 1s ease-out; }
+  .product-presentation-block__content .product-presentation-block__content-tile .image img:hover {
+    transform: scale(1.2); }
+  .product-presentation-block__content .product-presentation-block__content-tile .wide {
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  .product-presentation-block__content .product-presentation-block__content-tile .tall {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -132,6 +132,27 @@
        </div>
     </div>
 
+    <div class="product-presentation-block__wrapper">
+        <div class="container">
+            <div class="product-presentation-block__content">
+                <section class="product-presentation-block__content-title">
+                    <h2>Продукция</h2>
+                    <p>Мы&nbsp;производим <strong>инженерную доску, массивную доску, художественный паркет,
+                        модульный паркет, ёлочный паркет.</strong></p>
+                    <p>Специализация производства позволяет нам учитывать нюансы каждой партии сырья и&nbsp;максимально
+                        точно контролировать качество каждой единицы товара.</p>
+                </section>
+                <div class="product-presentation-block__content-tile">
+                    <div class="image wide"><a href="#"><img src="img/products-1.jpg" alt="product category pics" style="width: 700px;height: 240px"></a></div>
+                    <div class="image tall"><a href="#"><img src="img/products-2.jpg" alt="product category pics" style="width: 340px;height: 740px"></a></div>
+                    <div class="image"><a href="#"><img src="img/products-3.jpg" alt="product category pics" style="width: 345px;height: 240px"></a></div>
+                    <div class="image"><a href="#"><img src="img/products-4.jpg" alt="product category pics" style="width: 345px;height: 240px"></a></div>
+                    <div class="image"><a href="#"><img src="img/products-5.jpg" alt="product category pics" style="width: 345px;height: 240px"></a></div>
+                    <div class="image"><a href="#"><img src="img/products-6.jpg" alt="product category pics" style="width: 345px;height: 240px"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
