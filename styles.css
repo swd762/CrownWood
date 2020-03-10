@@ -156,6 +156,21 @@
     .advantages-block__content .advantages-block__content-col .card--margin {
       margin-bottom: 60px; }
 
+.product-presentation-block__content .product-presentation-block__content-title {
+  color: #333333; }
+  .product-presentation-block__content .product-presentation-block__content-title h2 {
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: 600; }
+  .product-presentation-block__content .product-presentation-block__content-title p {
+    margin: 30px 0;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 500; }
+    .product-presentation-block__content .product-presentation-block__content-title p:last-child {
+      margin-bottom: 50px;
+      font-size: 18px;
+      line-height: 22px; }
 .product-presentation-block__content .product-presentation-block__content-tile {
   display: grid;
   grid-template-columns: 345px 345px 340px;
