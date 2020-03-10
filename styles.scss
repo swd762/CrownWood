@@ -1,7 +1,10 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext');
 
+// Colors
 
+$yellow: #FFB800;
+$darker: #14282F;
 
 // Common styles
 * {
@@ -21,6 +24,18 @@
 
 .add-height {
   height: inherit;
+}
+
+
+.btn {
+  display: block;
+  width: fit-content;
+  font-size: 22px;
+  line-height: 27px;
+  color: $darker;
+  text-decoration: none;
+  padding: 23px 30px;
+  border: 5px solid $darker;
 }
 
 
@@ -243,7 +258,7 @@
       cursor: pointer;
       .product-title-marker {
         position: absolute;
-        background-color: #14282F;
+        background-color: $darker;
         color: #fff;
         font-size: 24px;
         line-height: 29px;
@@ -254,8 +269,8 @@
       }
       &:hover {
         .product-title-marker {
-          background-color: yellow;
-          color: #14282F;
+          background-color: $yellow;
+          color: $darker;
           transition: all 1s ease-out;
         }
       }
@@ -279,8 +294,19 @@
       grid-row-start: 1;
       grid-row-end: 4;
     }
-
   }
+}
+
+// Engineering board block
+.engineering-board-block__wrapper {
 
 }
 
+.engineering-board-block__content {
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 788px;
+    height: 236px;
+  }
+}
