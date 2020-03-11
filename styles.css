@@ -19,10 +19,79 @@
   width: fit-content;
   font-size: 22px;
   line-height: 27px;
-  color: #14282F;
   text-decoration: none;
-  padding: 23px 30px;
+  padding: 23px 30px; }
+
+.btn--light {
+  color: #14282F;
   border: 5px solid #14282F; }
+  .btn--light:hover {
+    background-color: #14282F;
+    color: #fff;
+    transition: all .4s ease-out; }
+
+.circle-big {
+  position: absolute;
+  top: 0;
+  right: 42px;
+  width: 260px;
+  height: 260px;
+  background-color: #333333;
+  border-radius: 130px;
+  overflow: hidden;
+  box-shadow: 0 8px 8px 0 rgba(20, 40, 47, 0.15); }
+  .circle-big .circle-bg {
+    transition: all 0.5s ease-out;
+    position: absolute;
+    right: -20px; }
+  .circle-big .dot {
+    transition: all .5s ease-out; }
+  .circle-big:hover {
+    z-index: 10; }
+    .circle-big:hover .circle-bg {
+      transform: matrix(1.2, 0.1, -0.1, 1.2, 20, -20); }
+    .circle-big:hover .dot {
+      opacity: 0; }
+  .circle-big .dot {
+    position: absolute;
+    top: 80px;
+    right: 85px; }
+
+.circle-mid {
+  position: absolute;
+  top: 158px;
+  right: 57px;
+  width: 200px;
+  height: 200px;
+  background-color: #333333;
+  border-radius: 100px;
+  overflow: hidden;
+  transition: all 0.3s ease-out; }
+  .circle-mid .circle-bg {
+    transition: all 0.5s ease-out; }
+  .circle-mid .dot {
+    transition: all .5s ease-out; }
+  .circle-mid:hover {
+    transform: scale(1.2);
+    z-index: 10; }
+    .circle-mid:hover .circle-bg {
+      transform: matrix(1.2, 0.1, -0.1, 1.2, 20, -18); }
+    .circle-mid:hover .dot {
+      opacity: 0; }
+  .circle-mid .dot {
+    position: absolute;
+    top: 80px;
+    right: 85px; }
+
+.circle-small {
+  position: absolute;
+  top: 295px;
+  right: 126px;
+  width: 150px;
+  height: 150px;
+  background-color: #333333;
+  border-radius: 75px;
+  overflow: hidden; }
 
 .header {
   height: 100px;
@@ -166,6 +235,9 @@
     .advantages-block__content .advantages-block__content-col .card--margin {
       margin-bottom: 60px; }
 
+.product-presentation-block__wrapper {
+  background: url(img/vector14.svg) 50% -110% no-repeat; }
+
 .product-presentation-block__content .product-presentation-block__content-title {
   color: #333333; }
   .product-presentation-block__content .product-presentation-block__content-title h2 {
@@ -220,7 +292,8 @@
     grid-row-end: 4; }
 
 .engineering-board-block__wrapper {
-  padding: 60px 0 63px 0; }
+  padding: 60px 0 63px 0;
+  background: url(img/vector14.svg) 50% 100% no-repeat; }
 
 .engineering-board-block__content {
   display: flex;
@@ -242,32 +315,5 @@
     .engineering-board-block__content .engineering-board-image img {
       position: relative;
       left: -140px; }
-  .engineering-board-block__content .circle-big {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 260px;
-    height: 260px;
-    background-color: #333333;
-    border-radius: 130px;
-    overflow: hidden; }
-  .engineering-board-block__content .circle-mid {
-    position: absolute;
-    top: 100px;
-    right: 0;
-    width: 200px;
-    height: 200px;
-    background-color: #333333;
-    border-radius: 100px;
-    overflow: hidden; }
-  .engineering-board-block__content .circle-small {
-    position: absolute;
-    top: 200px;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    background-color: #333333;
-    border-radius: 75px;
-    overflow: hidden; }
 
 /*# sourceMappingURL=styles.css.map */
