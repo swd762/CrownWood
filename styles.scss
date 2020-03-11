@@ -300,14 +300,64 @@ $darker: #14282F;
 
 // Engineering board block
 .engineering-board-block__wrapper {
-
+padding: 60px 0 63px 0;
 }
 
 .engineering-board-block__content {
   display: flex;
   flex-direction: column;
-  img {
-    width: 788px;
-    height: 236px;
+  position: relative;
+  h2 {
+    font-size: 46px;
+    line-height: 56px;
+  }
+  p {
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 400;
+    width: 616px;
+    margin: 50px 0 88px 0;
+    strong {
+      font-weight: 600;
+    }
+  }
+  .engineering-board-image {
+    position: relative;
+
+    img {
+      position: relative;
+      left: -140px;
+    }
+  }
+
+  .circle-big {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 260px;
+    background-color: #333333;
+    border-radius: 130px;
+    overflow: hidden;
+  }
+  .circle-mid {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #333333;
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .circle-small {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-color: #333333;
+    border-radius: 75px;
+    overflow: hidden;
   }
 }
