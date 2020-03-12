@@ -32,8 +32,10 @@ $darker: #14282F;
   width: max-content;
   font-size: 22px;
   line-height: 27px;
+  font-weight: 500;
   text-decoration: none;
   padding: 23px 30px;
+
 }
 .btn--light {
   color: $darker;
@@ -41,6 +43,15 @@ $darker: #14282F;
   &:hover {
     background-color: $darker;
     color: #fff;
+    transition: all .4s ease-out;
+  }
+}
+.btn--dark {
+  color: #fff;
+  border: 5px solid #fff;
+  &:hover {
+    background-color:#fff ;
+    color: $darker;
     transition: all .4s ease-out;
   }
 }
@@ -499,6 +510,69 @@ padding: 60px 0 63px 0;
       }
     }
   }
+}
 
+// Modular parquet
+.modular-parquet-block__wrapper {
+  height: 1252px;
+  background: url("img/bg-dark-1.svg") center no-repeat;
+}
+.modular-parquet-block__content-paralax {
+  //height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background: url("img/parquet-bg.jpg") center no-repeat;
+  color: #fff;
+  padding: 60px 0 0 0;
+  height: 614px;
+  h2 {
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: 600;
+    margin: 0 0 50px 0;
+  }
+  p {
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 500;
+    margin-bottom: 27px;
+    width: 775px;
+  }
+}
+.modular-parquet-block__content-simples {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .samples-block {
+    display: flex;
+    justify-content: center;
+    .sample-circle {
+      margin: 60px 46px 50px 0;
+      width: 300px;
+      height: 300px;
+      border-radius: 150px;
+      border:5px solid #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:last-child {
+        margin-right: 0;
+      }
+      .sub-circle {
+        width: 260px;
+        height: 260px;
+        border-radius: 130px;
+        overflow: hidden;
 
+        img {
+          transition: all 0.5s ease-out;
+        }
+        &:hover {
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
 }

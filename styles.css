@@ -19,6 +19,7 @@
   width: max-content;
   font-size: 22px;
   line-height: 27px;
+  font-weight: 500;
   text-decoration: none;
   padding: 23px 30px; }
 
@@ -28,6 +29,14 @@
   .btn--light:hover {
     background-color: #14282F;
     color: #fff;
+    transition: all .4s ease-out; }
+
+.btn--dark {
+  color: #fff;
+  border: 5px solid #fff; }
+  .btn--dark:hover {
+    background-color: #fff;
+    color: #14282F;
     transition: all .4s ease-out; }
 
 .circle-big {
@@ -373,5 +382,56 @@
         width: 196px;
         top: -146px;
         right: -172px; }
+
+.modular-parquet-block__wrapper {
+  height: 1252px;
+  background: url("img/bg-dark-1.svg") center no-repeat; }
+
+.modular-parquet-block__content-paralax {
+  background-attachment: fixed;
+  background-size: cover;
+  background: url("img/parquet-bg.jpg") center no-repeat;
+  color: #fff;
+  padding: 60px 0 0 0;
+  height: 614px; }
+  .modular-parquet-block__content-paralax h2 {
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: 600;
+    margin: 0 0 50px 0; }
+  .modular-parquet-block__content-paralax p {
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 500;
+    margin-bottom: 27px;
+    width: 775px; }
+
+.modular-parquet-block__content-simples {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .modular-parquet-block__content-simples .samples-block {
+    display: flex;
+    justify-content: center; }
+    .modular-parquet-block__content-simples .samples-block .sample-circle {
+      margin: 60px 46px 50px 0;
+      width: 300px;
+      height: 300px;
+      border-radius: 150px;
+      border: 5px solid #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .modular-parquet-block__content-simples .samples-block .sample-circle:last-child {
+        margin-right: 0; }
+      .modular-parquet-block__content-simples .samples-block .sample-circle .sub-circle {
+        width: 260px;
+        height: 260px;
+        border-radius: 130px;
+        overflow: hidden; }
+        .modular-parquet-block__content-simples .samples-block .sample-circle .sub-circle img {
+          transition: all 0.5s ease-out; }
+        .modular-parquet-block__content-simples .samples-block .sample-circle .sub-circle:hover img {
+          transform: scale(1.2); }
 
 /*# sourceMappingURL=styles.css.map */
