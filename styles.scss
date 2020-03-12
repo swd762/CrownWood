@@ -44,6 +44,8 @@ $darker: #14282F;
     transition: all .4s ease-out;
   }
 }
+  // **************************
+
   // Circles
 .circle-big {
   position: absolute;
@@ -87,6 +89,7 @@ $darker: #14282F;
   background-color: #333333;
   border-radius: 100px;
   overflow: hidden;
+  box-shadow: 0 8px 8px 0 rgba(20, 40, 47, 0.15);
   transition: all 0.3s ease-out;
   .circle-bg {
     transition: all 0.5s ease-out;
@@ -106,10 +109,9 @@ $darker: #14282F;
   }
   .dot {
     position: absolute;
-    top: 80px;
-    right: 85px;
+    top: 85px;
+    right: 76px;
   }
-
 }
 .circle-small {
   position: absolute;
@@ -120,8 +122,31 @@ $darker: #14282F;
   background-color: #333333;
   border-radius: 75px;
   overflow: hidden;
+  box-shadow: 0 8px 8px 0 rgba(20, 40, 47, 0.15);
+  transition: all 0.3s ease-out;
+  .circle-bg {
+    transition: all 0.5s ease-out;
+  }
+  .dot {
+    transition: all .5s ease-out;
+  }
+  &:hover {
+    transform: scale(1.3);
+    z-index: 10;
+    .circle-bg {
+      transform: scale(1.3);
+    }
+    .dot {
+      opacity: 0;
+    }
+  }
+  .dot {
+    position: absolute;
+    top: 90px;
+    right: 52px;
+  }
 }
-
+  // *****************************
 
 
 
@@ -411,10 +436,67 @@ padding: 60px 0 63px 0;
   }
   .engineering-board-image {
     position: relative;
-
-    img {
+    .wood {
       position: relative;
       left: -140px;
+    }
+    .dot {
+      position: absolute;
+      text-decoration: none;
+      p {
+        position: absolute;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333333;
+        font-weight: 500;
+        opacity: 0.3;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        cursor: default;
+        transition: all 0.3s ease-out;
+      }
+    }
+    .dot--1 {
+      top:10px;
+      left: 84px;
+      &:hover {
+        p {
+          opacity: 1;
+        }
+      }
+      p {
+        width: 196px;
+        top:-125px;
+        left: -75px;
+      }
+
+    }
+    .dot--2 {
+      top:70px;
+      left: 344px;
+      &:hover {
+        p {
+          opacity: 1;
+        }
+      }
+      p {
+        width: 216px;
+        top: 15px;
+        left: 0;
+      }
+    }
+    .dot--3 {
+      top: 40px;
+      left: 470px;
+      &:hover {
+        p {
+          opacity: 1;
+        }
+      }
+      p {
+        width: 196px;
+        top: -146px;
+        right: -172px;
+      }
     }
   }
 
