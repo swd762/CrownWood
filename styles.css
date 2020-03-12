@@ -119,7 +119,7 @@
     right: 52px; }
 
 .sample-circle {
-  margin: 60px 46px 50px 0;
+  margin: 0 46px 0 0;
   width: 300px;
   height: 300px;
   border-radius: 150px;
@@ -430,11 +430,13 @@
   flex-direction: column;
   align-items: center; }
   .modular-parquet-block__content-simples .samples-block {
+    margin: 80px 0 60px 0;
     display: flex;
     justify-content: center; }
 
 .massive-board-block__wrapper {
-  padding: 85px 0 63px 0; }
+  padding: 85px 0 176px 0;
+  background: url(img/elka-top.jpg) 50% 100% no-repeat; }
 
 .massive-board-block__content {
   color: #333;
@@ -462,5 +464,32 @@
       position: relative;
       left: -75px;
       top: -30px; }
+
+.elka-parquet-block__wrapper {
+  height: 945px;
+  background: url("img/elka-btm.jpg") 50% 0 no-repeat; }
+
+.elka-parquet-block__content {
+  color: #fff;
+  padding: 50px 0 0 0; }
+  .elka-parquet-block__content h2 {
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: 600;
+    margin: 0 0 60px 0; }
+  .elka-parquet-block__content p {
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 500;
+    width: 668px; }
+
+.elka-parquet-block__content-simples {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .elka-parquet-block__content-simples .samples-block {
+    margin: 50px 0 70px 0;
+    display: flex;
+    justify-content: center; }
 
 /*# sourceMappingURL=styles.css.map */
