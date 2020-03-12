@@ -178,7 +178,14 @@ $darker: #14282F;
     height: 260px;
     border-radius: 130px;
     overflow: hidden;
-
+    position: relative;
+    .label {
+      position: absolute;
+      width: 290px;
+      text-align: center;
+      top: 0;
+      left: 0;
+    }
     img {
       transition: all 0.5s ease-out;
     }

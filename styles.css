@@ -133,7 +133,14 @@
     width: 260px;
     height: 260px;
     border-radius: 130px;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
+    .sample-circle .sub-circle .label {
+      position: absolute;
+      width: 290px;
+      text-align: center;
+      top: 0;
+      left: 0; }
     .sample-circle .sub-circle img {
       transition: all 0.5s ease-out; }
     .sample-circle .sub-circle:hover img {
