@@ -1,3 +1,6 @@
+
+
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext');
 
@@ -773,8 +776,12 @@ padding: 110px 0 63px 0;
   font-size: 22px;
   line-height: 27px;
   font-weight: 500;
+  transition: all 0.3s ease-out;
   img {
     margin-left: 20px;
+  }
+  &:hover {
+    background-color: #DB1B00;
   }
 }
 
@@ -804,3 +811,34 @@ padding: 110px 0 63px 0;
   }
 }
 
+
+// footer
+
+footer {
+  background-color: #003333;
+}
+.footer-content {
+  height: 51px;
+  display: flex;
+  align-items: center;
+  a {
+    text-decoration: none;
+    margin-right: 11px;
+    &:last-of-type {
+      margin-right: 50px;
+    }
+    &:hover {
+      background-color: #FFB800;
+    }
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  p {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #A0A0A0;;
+  }
+}
