@@ -708,3 +708,36 @@ padding: 110px 0 63px 0;
   }
 }
 
+// wall panels block
+.wall-panels-block__wrapper {
+  height: 972px;
+  background: url(img/sten.png) 50% 100% no-repeat;
+}
+.wall-panels-block__content {
+  color: #fff;
+  padding: 60px 0 0 0;
+  h2 {
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: 600;
+    margin: 0 0 50px 0;
+  }
+  p {
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 500;
+    margin-bottom: 27px;
+    width: 775px;
+  }
+}
+.wall-panels-block__content-simples {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .samples-block {
+    margin: 80px 0 60px 0;
+    display: flex;
+    justify-content: center;
+
+  }
+}
