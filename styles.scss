@@ -743,9 +743,19 @@ padding: 110px 0 63px 0;
 }
 .wall-panels-block__content-extra-offer {
   color: $darker;
-  margin-top: 120px;
+  //margin-top: 120px;
+  padding-bottom: 60px;
+  h2 {
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: 600;
+    margin: 0 0 50px 0;
+  }
   p {
     width: 501px;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 500;
     margin-bottom: 23px;
   }
 }
@@ -767,3 +777,30 @@ padding: 110px 0 63px 0;
     margin-left: 20px;
   }
 }
+
+// Map block
+.map-block__wrapper {
+
+}
+.map-block__header {
+ background-color: #666;
+  color: #fff;
+  padding: 49px 0;
+  h2 {
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: 600;
+  }
+}
+.map-block__content {
+  display: flex;
+  justify-content: flex-end;
+  .map-block__content-map {
+    position: relative;
+    width: 45%;
+    img {
+      width: 100%;
+    }
+  }
+}
+

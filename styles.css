@@ -564,9 +564,17 @@
 
 .wall-panels-block__content-extra-offer {
   color: #14282F;
-  margin-top: 120px; }
+  padding-bottom: 60px; }
+  .wall-panels-block__content-extra-offer h2 {
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: 600;
+    margin: 0 0 50px 0; }
   .wall-panels-block__content-extra-offer p {
     width: 501px;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 500;
     margin-bottom: 23px; }
 
 .red-btn {
@@ -585,5 +593,23 @@
   font-weight: 500; }
   .red-btn img {
     margin-left: 20px; }
+
+.map-block__header {
+  background-color: #666;
+  color: #fff;
+  padding: 49px 0; }
+  .map-block__header h2 {
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: 600; }
+
+.map-block__content {
+  display: flex;
+  justify-content: flex-end; }
+  .map-block__content .map-block__content-map {
+    position: relative;
+    width: 45%; }
+    .map-block__content .map-block__content-map img {
+      width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
