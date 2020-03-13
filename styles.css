@@ -541,7 +541,7 @@
 
 .wall-panels-block__content {
   color: #fff;
-  padding: 60px 0 0 0; }
+  padding: 60px 0 60px 0; }
   .wall-panels-block__content h2 {
     font-size: 46px;
     line-height: 56px;
@@ -561,5 +561,29 @@
     margin: 60px 0 50px 0;
     display: flex;
     justify-content: center; }
+
+.wall-panels-block__content-extra-offer {
+  color: #14282F;
+  margin-top: 120px; }
+  .wall-panels-block__content-extra-offer p {
+    width: 501px;
+    margin-bottom: 23px; }
+
+.red-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #FF2000;
+  width: 354px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 500; }
+  .red-btn img {
+    margin-left: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
