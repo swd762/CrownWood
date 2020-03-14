@@ -20,6 +20,10 @@ $darker: #14282F;
   font-family: 'Montserrat', sans-serif;
 }
 
+main, footer, header {
+  overflow: hidden;
+}
+
 .container {
   width: 1060px;
   margin: 0 auto;
