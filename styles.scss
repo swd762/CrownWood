@@ -13,20 +13,6 @@ $darker: #14282F;
 
 $tablet: 1080px;
 
-// brakepoint styles
-.tablet-only {
-  display: none;
-  @media (max-width: $tablet){
-    display: block;
-  }
-}
-.no-tablet {
-  @media (max-width: $tablet){
-    display: none!important;
-  }
-}
-
-
 
 // Common styles
 * {
@@ -664,10 +650,11 @@ main, footer, header {
     }
   }
   .engineering-board-image {
+    margin-bottom: 20px;
     position: relative;
     .wood {
       position: relative;
-      left: -140px;
+      left: -40px;
     }
     .dot {
       position: absolute;
@@ -728,9 +715,13 @@ main, footer, header {
       }
     }
   }
+  .btn--tablet {
+    display: none;
+  }
+
   .samples-block {
-    margin: 0 0 60px 0;
-    display: flex;
+    margin: 0 0 40px 0;
+    display: none;
     justify-content: center;
     .sample-circle {
       margin: 0 46px 0 0;
@@ -766,9 +757,26 @@ main, footer, header {
     }
     .engineering-board-image {
       margin-left: 30px;
+      margin-bottom: 50px;
+      .dot--2 p {
+        width: 431px;
+        left: -240px;
+      }
     }
     .btn {
       align-self: center;
+    }
+    .btn--desktop {
+      display: none;
+    }
+    .btn--tablet {
+      display: block;
+    }
+    .samples-block--tablet {
+      display: flex;
+    }
+    .circle--no-tablet {
+      display: none;
     }
   }
 }
@@ -1045,3 +1053,8 @@ footer {
     color: #A0A0A0;;
   }
 }
+
+
+
+
+//@import "scss/breakpoints";

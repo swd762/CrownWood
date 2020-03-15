@@ -1,14 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext");
-.tablet-only {
-  display: none; }
-  @media (max-width: 1080px) {
-    .tablet-only {
-      display: block; } }
-
-@media (max-width: 1080px) {
-  .no-tablet {
-    display: none !important; } }
-
 * {
   box-sizing: border-box; }
 
@@ -500,10 +490,11 @@ main, footer, header {
     .engineering-board-block__content p strong {
       font-weight: 600; }
   .engineering-board-block__content .engineering-board-image {
+    margin-bottom: 20px;
     position: relative; }
     .engineering-board-block__content .engineering-board-image .wood {
       position: relative;
-      left: -140px; }
+      left: -40px; }
     .engineering-board-block__content .engineering-board-image .dot {
       position: absolute;
       text-decoration: none; }
@@ -544,9 +535,11 @@ main, footer, header {
         width: 196px;
         top: -146px;
         right: -172px; }
+  .engineering-board-block__content .btn--tablet {
+    display: none; }
   .engineering-board-block__content .samples-block {
-    margin: 0 0 60px 0;
-    display: flex;
+    margin: 0 0 40px 0;
+    display: none;
     justify-content: center; }
     .engineering-board-block__content .samples-block .sample-circle {
       margin: 0 46px 0 0;
@@ -569,9 +562,21 @@ main, footer, header {
       line-height: 24px;
       margin: 40px 0 100px 0; }
     .engineering-board-block__content .engineering-board-image {
-      margin-left: 30px; }
+      margin-left: 30px;
+      margin-bottom: 50px; }
+      .engineering-board-block__content .engineering-board-image .dot--2 p {
+        width: 431px;
+        left: -240px; }
     .engineering-board-block__content .btn {
-      align-self: center; } }
+      align-self: center; }
+    .engineering-board-block__content .btn--desktop {
+      display: none; }
+    .engineering-board-block__content .btn--tablet {
+      display: block; }
+    .engineering-board-block__content .samples-block--tablet {
+      display: flex; }
+    .engineering-board-block__content .circle--no-tablet {
+      display: none; } }
 
 .modular-parquet-block__wrapper {
   height: 1252px;
