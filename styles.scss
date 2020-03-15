@@ -902,9 +902,12 @@ main, footer, header {
     position: relative;
     .wood {
       position: relative;
-      left: -75px;
-      top: -30px;
+      //left: -75px;
+      //top: -30px;
     }
+  }
+  .samples-block {
+    display: none;
   }
   @media (max-width: $tablet) {
     h2 {
@@ -930,6 +933,19 @@ main, footer, header {
     .circle--no-tablet {
       display: none;
     }
+    .samples-block--tablet {
+      display: flex;
+      margin-bottom: 80px;
+      .sample-circle {
+        border: none;
+      }
+    }
+    .massive-board-image {
+      .wood {
+        left: 0;
+        top: 0;
+      }
+    }
   }
 }
 
@@ -954,6 +970,20 @@ main, footer, header {
     //margin-bottom: 47px;
     width: 668px;
   }
+  @media (max-width: $tablet) {
+    h2 {
+      font-size: 40px;
+      line-height: 48px;
+      //margin: 0 0 60px 0;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      //font-weight: 500;
+      //margin-bottom: 47px;
+       width: 448px;
+    }
+  }
 }
 .elka-parquet-block__content-simples {
   display: flex;
@@ -964,6 +994,17 @@ main, footer, header {
     display: flex;
     justify-content: center;
 
+  }
+  @media (max-width: $tablet) {
+    .samples-block {
+
+      .label {
+
+        font-size: 18px;
+        line-height: 20px;
+        padding: 15px;
+      }
+    }
   }
 }
 
