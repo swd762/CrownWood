@@ -373,11 +373,34 @@ main, footer, header {
 
 .about-block-mobile__wrapper {
   background: url("img/about-mob-bg.jpg") center no-repeat;
+  padding: 50px 0 30px 0;
   height: 461px;
-  background-size: cover; }
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  color: #fff; }
+  .about-block-mobile__wrapper h1 {
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: bold;
+    margin-top: 30px; }
+  .about-block-mobile__wrapper h2 {
+    margin-top: 6px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500; }
+  .about-block-mobile__wrapper p {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    width: 375px;
+    text-align: center; }
+    .about-block-mobile__wrapper p:first-of-type {
+      margin-top: 30px; }
   @media (max-width: 750px) {
     .about-block-mobile__wrapper {
-      display: block; } }
+      display: flex; } }
 
 .advantages-block__wrapper {
   padding: 30px 0 60px 0; }
