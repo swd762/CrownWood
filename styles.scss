@@ -213,6 +213,8 @@ main, footer, header {
     border-radius: 130px;
     overflow: hidden;
     position: relative;
+	display: flex;
+	align-items: center;
     .label {
       position: absolute;
       width: 100%;
@@ -227,6 +229,7 @@ main, footer, header {
       padding: 23px;
     }
     img {
+	  
       transition: all 0.5s ease-out;
     }
     &:hover {
@@ -234,6 +237,17 @@ main, footer, header {
         transform: scale(1.2);
       }
     }
+  }
+  @media (max-width: $tablet) {
+	width: 230px;
+	height: 230px;
+	border-radius: 115px;
+	margin: 0 27px 0 0;
+	.sub-circle {
+		width: 200px;
+		height: 200px;
+		border-radius: 100px;
+	}
   }
 }
   // ******************************
@@ -732,15 +746,10 @@ main, footer, header {
       &:last-child {
         margin: 0;
       }
-      //display: flex;
-      //justify-content: center;
-      //align-items: center;
       .sub-circle {
         width: 200px;
         height: 200px;
         border-radius: 100px;
-        //overflow: hidden;
-        //position: relative;
       }
     }
   }
@@ -785,11 +794,13 @@ main, footer, header {
 .modular-parquet-block__wrapper {
   height: 1252px;
   background: url("img/bg-dark-1.svg") center no-repeat;
+  @media (max-width: $tablet) {
+    height: 1053px;
+    background-position: 50% 100%;
+    
+  }
 }
 .modular-parquet-block__content-paralax {
-  //height: 100%;
-  background-attachment: fixed;
-  background-size: cover;
   background: url("img/parquet-bg.jpg") center no-repeat;
   color: #fff;
   padding: 60px 0 0 0;
@@ -807,7 +818,36 @@ main, footer, header {
     margin-bottom: 27px;
     width: 775px;
   }
+  @media (max-width: $tablet) {
+    display: none;
+  }
 }
+.modular-parquet-block__content {
+  display: none;
+  background: url("img/parquet-bg.jpg") center no-repeat;
+  color: #fff;
+  padding: 50px 0 0 0;
+  height: 525px;
+  h2 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    //width: 775px;
+  }
+  @media (max-width: $tablet) {
+    display: block;
+    //flex-direction: column;
+    //justify-content: center;
+  }
+}
+
 .modular-parquet-block__content-simples {
   display: flex;
   flex-direction: column;
@@ -816,7 +856,11 @@ main, footer, header {
     margin: 80px 0 60px 0;
     display: flex;
     justify-content: center;
-
+  }
+  @media (max-width: $tablet) {
+    .samples-block {
+      margin: 60px 0;
+    }
   }
 }
 

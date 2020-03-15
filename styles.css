@@ -155,7 +155,9 @@ main, footer, header {
     height: 260px;
     border-radius: 130px;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    display: flex;
+    align-items: center; }
     .sample-circle .sub-circle .label {
       position: absolute;
       width: 100%;
@@ -172,6 +174,16 @@ main, footer, header {
       transition: all 0.5s ease-out; }
     .sample-circle .sub-circle:hover img {
       transform: scale(1.2); }
+  @media (max-width: 1080px) {
+    .sample-circle {
+      width: 230px;
+      height: 230px;
+      border-radius: 115px;
+      margin: 0 27px 0 0; }
+      .sample-circle .sub-circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px; } }
 
 .header {
   height: 100px;
@@ -581,10 +593,12 @@ main, footer, header {
 .modular-parquet-block__wrapper {
   height: 1252px;
   background: url("img/bg-dark-1.svg") center no-repeat; }
+  @media (max-width: 1080px) {
+    .modular-parquet-block__wrapper {
+      height: 1053px;
+      background-position: 50% 100%; } }
 
 .modular-parquet-block__content-paralax {
-  background-attachment: fixed;
-  background-size: cover;
   background: url("img/parquet-bg.jpg") center no-repeat;
   color: #fff;
   padding: 60px 0 0 0;
@@ -600,6 +614,29 @@ main, footer, header {
     font-weight: 500;
     margin-bottom: 27px;
     width: 775px; }
+  @media (max-width: 1080px) {
+    .modular-parquet-block__content-paralax {
+      display: none; } }
+
+.modular-parquet-block__content {
+  display: none;
+  background: url("img/parquet-bg.jpg") center no-repeat;
+  color: #fff;
+  padding: 50px 0 0 0;
+  height: 525px; }
+  .modular-parquet-block__content h2 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    margin: 0 0 30px 0; }
+  .modular-parquet-block__content p {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 24px; }
+  @media (max-width: 1080px) {
+    .modular-parquet-block__content {
+      display: block; } }
 
 .modular-parquet-block__content-simples {
   display: flex;
@@ -609,6 +646,9 @@ main, footer, header {
     margin: 80px 0 60px 0;
     display: flex;
     justify-content: center; }
+  @media (max-width: 1080px) {
+    .modular-parquet-block__content-simples .samples-block {
+      margin: 60px 0; } }
 
 .massive-board-block__wrapper {
   padding: 85px 0 176px 0;
