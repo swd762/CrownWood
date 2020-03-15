@@ -747,6 +747,9 @@ main, footer, header {
 
 .art-parquet-block__wrapper {
   padding: 85px 0 71px 0; }
+  @media (max-width: 1080px) {
+    .art-parquet-block__wrapper {
+      padding: 50px 0; } }
 
 .art-parquet-block__content {
   color: #333;
@@ -764,6 +767,9 @@ main, footer, header {
     margin: 50px 0 35px 0; }
     .art-parquet-block__content p strong {
       font-weight: 600; }
+  @media (max-width: 1080px) {
+    .art-parquet-block__content .circle--no-tablet {
+      display: none; } }
 
 .wall-panels-block__wrapper {
   height: 972px;
