@@ -767,7 +767,14 @@ main, footer, header {
     margin: 50px 0 35px 0; }
     .art-parquet-block__content p strong {
       font-weight: 600; }
+  .art-parquet-block__content .samples-block {
+    display: none; }
   @media (max-width: 1080px) {
+    .art-parquet-block__content .samples-block {
+      display: flex;
+      margin-bottom: 50px; }
+    .art-parquet-block__content .btn {
+      align-self: center; }
     .art-parquet-block__content .circle--no-tablet {
       display: none; } }
 

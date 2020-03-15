@@ -1033,7 +1033,17 @@ main, footer, header {
       font-weight: 600;
     }
   }
+  .samples-block {
+    display: none;
+  }
   @media (max-width: $tablet) {
+    .samples-block {
+      display: flex;
+      margin-bottom: 50px;
+    }
+    .btn {
+      align-self: center;
+    }
     .circle--no-tablet {
       display: none;
     }
