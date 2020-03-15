@@ -45,6 +45,9 @@ main, footer, header {
   @media (max-width: $mob) {
     width: 520px;
   }
+  @media (max-width: 520px) {
+    width: 100%;
+  }
 
 }
 
