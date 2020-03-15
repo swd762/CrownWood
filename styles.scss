@@ -775,12 +775,12 @@ main, footer, header {
     .btn {
       align-self: center;
     }
-    .btn--desktop {
-      display: none;
-    }
-    .btn--tablet {
-      display: block;
-    }
+    //.btn--desktop {
+    //  display: none;
+    //}
+    //.btn--tablet {
+    //  display: block;
+    //}
     .samples-block--tablet {
       display: flex;
     }
@@ -868,6 +868,9 @@ main, footer, header {
 .massive-board-block__wrapper {
   padding: 85px 0 176px 0;
   background: url(img/elka-top.jpg) 50% 100% no-repeat;
+  @media (max-width: $tablet) {
+    padding: 50px 0 150px 0;
+  }
 }
 
 .massive-board-block__content {
@@ -880,7 +883,6 @@ main, footer, header {
     line-height: 56px;
   }
   p {
-
     font-size: 22px;
     line-height: 27px;
     font-weight: 400;
@@ -902,6 +904,31 @@ main, footer, header {
       position: relative;
       left: -75px;
       top: -30px;
+    }
+  }
+  @media (max-width: $tablet) {
+    h2 {
+      font-size: 40px;
+      line-height: 48px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      //font-weight: 400;
+      width: initial;
+      margin: 50px 0 18px 0;
+      strong {
+        font-weight: 600;
+      }
+      &:last-of-type {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 40px 0;
+      }
+
+    }
+    .circle--no-tablet {
+      display: none;
     }
   }
 }

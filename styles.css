@@ -581,10 +581,6 @@ main, footer, header {
         left: -240px; }
     .engineering-board-block__content .btn {
       align-self: center; }
-    .engineering-board-block__content .btn--desktop {
-      display: none; }
-    .engineering-board-block__content .btn--tablet {
-      display: block; }
     .engineering-board-block__content .samples-block--tablet {
       display: flex; }
     .engineering-board-block__content .circle--no-tablet {
@@ -653,6 +649,9 @@ main, footer, header {
 .massive-board-block__wrapper {
   padding: 85px 0 176px 0;
   background: url(img/elka-top.jpg) 50% 100% no-repeat; }
+  @media (max-width: 1080px) {
+    .massive-board-block__wrapper {
+      padding: 50px 0 150px 0; } }
 
 .massive-board-block__content {
   color: #333;
@@ -680,6 +679,23 @@ main, footer, header {
       position: relative;
       left: -75px;
       top: -30px; }
+  @media (max-width: 1080px) {
+    .massive-board-block__content h2 {
+      font-size: 40px;
+      line-height: 48px; }
+    .massive-board-block__content p {
+      font-size: 20px;
+      line-height: 24px;
+      width: initial;
+      margin: 50px 0 18px 0; }
+      .massive-board-block__content p strong {
+        font-weight: 600; }
+      .massive-board-block__content p:last-of-type {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 40px 0; }
+    .massive-board-block__content .circle--no-tablet {
+      display: none; } }
 
 .elka-parquet-block__wrapper {
   height: 945px;
