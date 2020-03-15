@@ -729,9 +729,9 @@ main, footer, header {
       }
     }
   }
-  .btn--tablet {
-    display: none;
-  }
+  //.btn--tablet {
+  //  display: none;
+  //}
 
   .samples-block {
     margin: 0 0 40px 0;
@@ -763,6 +763,7 @@ main, footer, header {
       font-size: 20px;
       line-height: 24px;
       margin: 40px 0 100px 0;
+      width: initial;
     }
     .engineering-board-image {
       margin-left: 30px;
@@ -1037,6 +1038,15 @@ main, footer, header {
     display: none;
   }
   @media (max-width: $tablet) {
+    h2 {
+      font-size: 40px;
+      line-height: 48px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      width: initial;
+    }
     .samples-block {
       display: flex;
       margin-bottom: 50px;

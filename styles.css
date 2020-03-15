@@ -547,8 +547,6 @@ main, footer, header {
         width: 196px;
         top: -146px;
         right: -172px; }
-  .engineering-board-block__content .btn--tablet {
-    display: none; }
   .engineering-board-block__content .samples-block {
     margin: 0 0 40px 0;
     display: none;
@@ -572,7 +570,8 @@ main, footer, header {
     .engineering-board-block__content p {
       font-size: 20px;
       line-height: 24px;
-      margin: 40px 0 100px 0; }
+      margin: 40px 0 100px 0;
+      width: initial; }
     .engineering-board-block__content .engineering-board-image {
       margin-left: 30px;
       margin-bottom: 50px; }
@@ -770,6 +769,13 @@ main, footer, header {
   .art-parquet-block__content .samples-block {
     display: none; }
   @media (max-width: 1080px) {
+    .art-parquet-block__content h2 {
+      font-size: 40px;
+      line-height: 48px; }
+    .art-parquet-block__content p {
+      font-size: 20px;
+      line-height: 24px;
+      width: initial; }
     .art-parquet-block__content .samples-block {
       display: flex;
       margin-bottom: 50px; }
