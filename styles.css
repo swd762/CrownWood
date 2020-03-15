@@ -786,7 +786,11 @@ main, footer, header {
 
 .wall-panels-block__wrapper {
   height: 972px;
-  background: url(img/sten.png) 50% 100% no-repeat; }
+  background: url(img/wall-pannels.jpg) 50% 0 no-repeat; }
+  @media (max-width: 1080px) {
+    .wall-panels-block__wrapper {
+      background: url(img/sten.png) 50% 100% no-repeat;
+      height: 840px; } }
 
 .wall-panels-block__content {
   color: #fff;
@@ -801,6 +805,14 @@ main, footer, header {
     line-height: 27px;
     font-weight: 500;
     width: 694px; }
+  @media (max-width: 1080px) {
+    .wall-panels-block__content h2 {
+      font-size: 40px;
+      line-height: 48px; }
+    .wall-panels-block__content p {
+      font-size: 20px;
+      line-height: 24px;
+      width: initial; } }
 
 .wall-panels-block__content-simples {
   display: flex;
@@ -813,18 +825,33 @@ main, footer, header {
 
 .wall-panels-block__content-extra-offer {
   color: #14282F;
-  padding-bottom: 60px; }
+  padding-bottom: 40px;
+  background: url(img/wall-pannels.jpg) 50% 100% no-repeat; }
   .wall-panels-block__content-extra-offer h2 {
     font-size: 46px;
     line-height: 56px;
     font-weight: 600;
-    margin: 0 0 50px 0; }
+    margin: 0 0 40px 0;
+    position: relative;
+    top: -10px; }
   .wall-panels-block__content-extra-offer p {
     width: 501px;
     font-size: 22px;
     line-height: 27px;
     font-weight: 500;
     margin-bottom: 23px; }
+  @media (max-width: 1080px) {
+    .wall-panels-block__content-extra-offer {
+      background: none; }
+      .wall-panels-block__content-extra-offer h2 {
+        font-size: 40px;
+        line-height: 48px;
+        margin: 0 0 20px 0; }
+      .wall-panels-block__content-extra-offer p {
+        width: 501px;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 23px; } }
 
 .red-btn {
   text-decoration: none;
@@ -854,6 +881,12 @@ main, footer, header {
     font-size: 46px;
     line-height: 56px;
     font-weight: 600; }
+  @media (max-width: 1080px) {
+    .map-block__header {
+      padding: 25px 0; }
+      .map-block__header h2 {
+        font-size: 40px;
+        line-height: 48px; } }
 
 .map-block__content {
   display: flex;
