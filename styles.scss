@@ -12,7 +12,7 @@ $darker: #14282F;
 // Variables
 
 $tablet: 1080px;
-
+$mob: 750px;
 
 // Common styles
 * {
@@ -42,6 +42,10 @@ main, footer, header {
   @media (max-width: $tablet) {
     width: 726px;
   }
+  @media (max-width: $mob) {
+    width: 520px;
+  }
+
 }
 
 .add-height {
@@ -258,6 +262,19 @@ main, footer, header {
 
 
 // header
+.main-header {
+
+  @media (max-width: $mob) {
+    display: none;
+  }
+}
+.mobile-header {
+  display: none;
+  height: 54px;
+  @media (max-width: $mob) {
+    display: block;
+  }
+}
 
 .header {
   height: 100px;
@@ -319,6 +336,9 @@ main, footer, header {
   height: 750px;
   @media (max-width: $tablet) {
     height: 416px;
+  }
+  @media (max-width: $mob) {
+    display: none;
   }
 }
 .video-block__bg-container {
@@ -389,6 +409,9 @@ main, footer, header {
 // about block
 .about-block__wrapper {
   padding: 50px 0 0 0;
+  @media (max-width: $mob) {
+    display: none;
+  }
 }
 .about-block__content {
   display: flex;
@@ -461,6 +484,18 @@ main, footer, header {
     }
   }
 }
+
+// about block for mobile
+.about-block-mobile__wrapper {
+  background: url("img/about-mob-bg.jpg") center no-repeat;
+  height: 461px;
+  background-size: cover;
+  @media (max-width: $mob) {
+    display: block;
+  }
+}
+
+
 
 // Advantages block
 .advantages-block__wrapper {
