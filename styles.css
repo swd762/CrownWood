@@ -768,9 +768,8 @@ main, footer, header {
 @media (max-width: 750px) {
   .engineering-board-mobile-block__wrapper {
     display: flex; } }
-.engineering-board-mobile-block__wrapper samples-slider .slick-track {
-  position: relative;
-  left: -77px; }
+.engineering-board-mobile-block__wrapper .samples-slider .slick-track {
+  margin: 0 -77px; }
 
 .modular-parquet-block__wrapper {
   height: 1252px;

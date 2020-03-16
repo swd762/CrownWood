@@ -1003,10 +1003,9 @@ main, footer, header {
   @media (max-width: $mob) {
     display: flex;
   }
-  samples-slider {
+  .samples-slider {
     .slick-track {
-      position: relative;
-      left: -77px;
+      margin: 0 -77px;
     }
   }
 
