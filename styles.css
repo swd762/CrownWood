@@ -846,6 +846,8 @@ main, footer, header {
 @media (max-width: 750px) {
   .modular-parquet-mobile-block__wrapper {
     display: flex; } }
+.modular-parquet-mobile-block__wrapper .description {
+  margin-bottom: 0; }
 
 .massive-board-block__wrapper {
   padding: 85px 0 176px 0;

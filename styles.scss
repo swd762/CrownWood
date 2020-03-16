@@ -1096,10 +1096,13 @@ main, footer, header {
     }
   }
 }
-// Engineering block mobile
+// modular parquet block mobile
 .modular-parquet-mobile-block__wrapper {
   @media (max-width: $mob) {
     display: flex;
+  }
+  .description {
+    margin-bottom: 0;
   }
 }
 
