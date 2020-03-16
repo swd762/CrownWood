@@ -718,7 +718,8 @@ main, footer, header {
   padding: 30px 0;
   display: none;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  border-bottom: 15px solid #14282F; }
   .engineering-board-mobile-block__wrapper .title-image {
     position: relative; }
     .engineering-board-mobile-block__wrapper .title-image img {
@@ -743,6 +744,8 @@ main, footer, header {
     text-align: center; }
   .engineering-board-mobile-block__wrapper .samples-slider {
     margin: 20px 0; }
+    .engineering-board-mobile-block__wrapper .samples-slider img {
+      width: 100%; }
   @media (max-width: 750px) {
     .engineering-board-mobile-block__wrapper {
       display: flex; } }
