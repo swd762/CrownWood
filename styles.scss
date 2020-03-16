@@ -259,7 +259,46 @@ main, footer, header {
 }
   // ******************************
 
-
+  // product mobile template
+  .product-mobile-template {
+    padding: 0 0 30px 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 15px solid $darker;
+    .title-image {
+      position: relative;
+      img {width: 100%}
+      .marker {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 500;
+        text-align: center;
+        padding: 18px 0;
+        background-color: #FFB800;
+        position: absolute;
+        top: 35%;
+        width: 284px;
+        left: 50%;
+        margin-left: -142px;
+      }
+    }
+    .description {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 500;
+      margin: 20px 0;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .samples-slider {
+      margin: 20px 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  // **********
 
 
 
@@ -618,7 +657,40 @@ main, footer, header {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 10px 0 30px 0;
+    .slick-list {
+      margin: 0 50px;
+    }
+    .slick-next, .slick-prev {
+      display: none !important;
+    }
+    .making-arrow-next , {
+      background: url(img/arrow-right-slider.svg) center no-repeat;
+      right: 30px;
+      position: absolute;
+      width: 25px;
+      height: 60px;
+      border: none;
+      cursor: pointer;
+    }
+    .making-arrow-prev {
+      background: url(img/arrow-left-slider.svg) center no-repeat;
+      left: 40px;
+      position: absolute;
+      width: 25px;
+      height: 60px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .slide {
+      width: 300px;
+      //height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .arrow-left {
       position: absolute;
       top: 0;
@@ -660,6 +732,9 @@ main, footer, header {
   background: url(img/vector14.svg) 50% -110% no-repeat;
   @media (max-width: $tablet) {
     background: none;
+  }
+  @media (max-width: $mob) {
+    padding-bottom: 30px;
   }
 
 }
@@ -939,42 +1014,6 @@ main, footer, header {
 }
 // Engineering block mobile
 .engineering-board-mobile-block__wrapper {
-  padding: 30px 0;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 15px solid $darker;
-  .title-image {
-    position: relative;
-    img {width: 100%}
-    .marker {
-      font-size: 24px;
-      line-height: 29px;
-      font-weight: 500;
-      text-align: center;
-      padding: 18px 0;
-      background-color: #FFB800;
-      position: absolute;
-      top: 35%;
-      width: 284px;
-      left: 50%;
-      margin-left: -142px;
-    }
-  }
-  .description {
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 500;
-    margin: 20px 0;
-    text-align: center;
-  }
-  .samples-slider {
-    margin: 20px 0;
-    img {
-      width: 100%;
-    }
-  }
-
 
 
   @media (max-width: $mob) {
@@ -994,7 +1033,9 @@ main, footer, header {
   @media (max-width: $tablet) {
     height: 1053px;
     background-position: 50% 100%;
-    
+  }
+  @media (max-width: $mob) {
+    display: none;
   }
 }
 .modular-parquet-block__content-paralax {
@@ -1060,6 +1101,17 @@ main, footer, header {
     }
   }
 }
+// Engineering block mobile
+.modular-parquet-mobile-block__wrapper {
+
+
+  @media (max-width: $mob) {
+    display: flex;
+  }
+
+
+}
+
 
 // Massive board
 .massive-board-block__wrapper {
