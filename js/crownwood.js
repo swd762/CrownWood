@@ -15,7 +15,17 @@ $('.slider-nav').slick({
     asNavFor: '.slider-for',
     dots: true,
     centerMode: true,
+    // adaptiveHeight: true,
     focusOnSelect: true
+});
+$('.samples-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    // fade: true,
+    dots: true,
+    centerMode: false,
+    centerPadding: '50px'
 });
 
 

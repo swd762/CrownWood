@@ -665,41 +665,28 @@ main, footer, header {
     .slick-next, .slick-prev {
       display: none !important;
     }
-    .making-arrow-next , {
-      background: url(img/arrow-right-slider.svg) center no-repeat;
-      right: 30px;
+    .slick-arrow {
       position: absolute;
       width: 25px;
       height: 60px;
       border: none;
       cursor: pointer;
+    }
+    .making-arrow-next , {
+      background: url(img/arrow-right-slider.svg) center no-repeat;
+      right: 40px;
+
     }
     .making-arrow-prev {
       background: url(img/arrow-left-slider.svg) center no-repeat;
       left: 40px;
-      position: absolute;
-      width: 25px;
-      height: 60px;
-      border: none;
-      cursor: pointer;
     }
 
     .slide {
       width: 300px;
-      //height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-    .arrow-left {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .arrow-right {
-      position: absolute;
-      top: 0;
-      right: 0;
     }
   }
   .slider-for {
@@ -716,9 +703,6 @@ main, footer, header {
       line-height: 15px;
     }
   }
-
-
-
   @media (max-width: $mob) {
     display: flex;
   }
@@ -1018,6 +1002,12 @@ main, footer, header {
 
   @media (max-width: $mob) {
     display: flex;
+  }
+  samples-slider {
+    .slick-track {
+      position: relative;
+      left: -77px;
+    }
   }
 
 

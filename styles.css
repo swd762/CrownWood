@@ -520,35 +520,23 @@ main, footer, header {
       margin: 0 50px; }
     .advantages-block-mobile__wrapper .slider-nav .slick-next, .advantages-block-mobile__wrapper .slider-nav .slick-prev {
       display: none !important; }
+    .advantages-block-mobile__wrapper .slider-nav .slick-arrow {
+      position: absolute;
+      width: 25px;
+      height: 60px;
+      border: none;
+      cursor: pointer; }
     .advantages-block-mobile__wrapper .slider-nav .making-arrow-next {
       background: url(img/arrow-right-slider.svg) center no-repeat;
-      right: 30px;
-      position: absolute;
-      width: 25px;
-      height: 60px;
-      border: none;
-      cursor: pointer; }
+      right: 40px; }
     .advantages-block-mobile__wrapper .slider-nav .making-arrow-prev {
       background: url(img/arrow-left-slider.svg) center no-repeat;
-      left: 40px;
-      position: absolute;
-      width: 25px;
-      height: 60px;
-      border: none;
-      cursor: pointer; }
+      left: 40px; }
     .advantages-block-mobile__wrapper .slider-nav .slide {
       width: 300px;
       display: flex;
       justify-content: center;
       align-items: center; }
-    .advantages-block-mobile__wrapper .slider-nav .arrow-left {
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .advantages-block-mobile__wrapper .slider-nav .arrow-right {
-      position: absolute;
-      top: 0;
-      right: 0; }
   .advantages-block-mobile__wrapper .slider-for {
     color: #333;
     text-align: center; }
@@ -780,6 +768,9 @@ main, footer, header {
 @media (max-width: 750px) {
   .engineering-board-mobile-block__wrapper {
     display: flex; } }
+.engineering-board-mobile-block__wrapper samples-slider .slick-track {
+  position: relative;
+  left: -77px; }
 
 .modular-parquet-block__wrapper {
   height: 1252px;
