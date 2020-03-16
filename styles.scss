@@ -939,7 +939,10 @@ main, footer, header {
 }
 // Engineering block mobile
 .engineering-board-mobile-block__wrapper {
-
+  padding: 30px 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
   .title-image {
     position: relative;
     img {width: 100%}
@@ -957,7 +960,22 @@ main, footer, header {
       margin-left: -142px;
     }
   }
+  .description {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .samples-slider {
+    margin: 20px 0;
+  }
 
+
+
+  @media (max-width: $mob) {
+    display: flex;
+  }
 
 
 }
