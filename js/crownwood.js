@@ -25,7 +25,7 @@ $('.samples-slider').slick({
     // fade: true,
     dots: true,
     centerMode: false,
-    // centerPadding: '50px'
+    // adaptiveHeight: true
 });
 
 

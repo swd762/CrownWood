@@ -1260,11 +1260,9 @@ main, footer, header {
 }
 // Parquet elka mobile
 .parquet-elka-mobile-block__wrapper {
-
   @media (max-width: $mob) {
     display: flex;
   }
-
 }
 
 
@@ -1274,8 +1272,10 @@ main, footer, header {
   @media (max-width: $tablet) {
     padding: 50px 0;
   }
+  @media (max-width: $mob) {
+    display: none;
+  }
 }
-
 .art-parquet-block__content {
   color: #333;
   display: flex;
@@ -1320,6 +1320,10 @@ main, footer, header {
     }
   }
 }
+// Art parquet mobile
+.art-parquet-mobile-block__wrapper {
+  @media (max-width: $mob) {display: flex}
+}
 
 // wall panels block
 .wall-panels-block__wrapper {
@@ -1329,6 +1333,9 @@ main, footer, header {
   @media (max-width: $tablet) {
     background: url(img/sten.png) 50% 100% no-repeat;
     height: 840px;
+  }
+  @media (max-width: $mob) {
+    display: none;
   }
 }
 .wall-panels-block__content {
@@ -1373,6 +1380,7 @@ main, footer, header {
   color: #14282F;
   padding-bottom: 40px;
   background: url(img/wall-pannels.jpg) 50% 100% no-repeat;
+  @media (max-width: $mob) {display: none}
 
   h2 {
     font-size: 46px;
@@ -1426,6 +1434,36 @@ main, footer, header {
   }
   &:hover {
     background-color: #DB1B00;
+  }
+}
+
+// Wall panels mobile
+.wall-panels-mobile-block__wrapper {
+  @media (max-width: $mob) {
+    display: flex;
+  }
+}
+// Extra offer mobile
+.extra-offer-mobile__wrapper {
+  padding: 0 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: 22px;
+    line-height: 27px;
+
+  }
+  p {
+    text-align: center;
+    margin: 20px 0 30px 0;
+  }
+  .red-btn--mob {
+    width: 284px;
+    height: 60px;
+  }
+  @media (max-width: $mob) {
+    display: flex;
   }
 }
 
