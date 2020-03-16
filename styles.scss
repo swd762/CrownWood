@@ -526,7 +526,29 @@ main, footer, header {
     display: flex;
   }
 }
-
+.about-block-mobile-desc__wrapper {
+  padding: 20px 0 30px 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  color: $darker;
+  h3 {
+    font-size: 16px;
+    line-height: 20px;
+    width: 356px;
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 20px;
+    width: 356px;
+    text-align: center;
+  }
+  @media (max-width: $mob) {
+    display: flex;
+  }
+}
 
 
 // Advantages block
@@ -534,6 +556,9 @@ main, footer, header {
   padding:30px 0 60px 0 ;
   @media (max-width: $tablet) {
     padding: 30px 0 20px 0;
+  }
+  @media (max-width: $mob) {
+    display: none;
   }
 }
 .advantages-block__content {
@@ -560,9 +585,6 @@ main, footer, header {
         }
       }
     }
-    //.card--margin {
-    //  margin-bottom: 60px;
-    //}
     @media (max-width: $tablet){
       padding-right: 15px;
       .advantages-block__content-card {
@@ -586,6 +608,50 @@ main, footer, header {
 
   }
 }
+// Advantages mobile block
+.advantages-block-mobile__wrapper {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+
+  .slider-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 30px 0;
+    .arrow-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .arrow-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .slider-for {
+    color: #333;
+    text-align: center;
+    h3 {
+      font-size: 22px;
+      line-height: 27px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+
+
+  @media (max-width: $mob) {
+    display: flex;
+  }
+}
+
+
 
 
 // Product presentation block
@@ -747,7 +813,7 @@ main, footer, header {
         color: #333333;
         font-weight: 500;
         opacity: 0.3;
-        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        //text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         cursor: default;
         transition: all 0.3s ease-out;
       }

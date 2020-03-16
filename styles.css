@@ -405,11 +405,35 @@ main, footer, header {
     .about-block-mobile__wrapper {
       display: flex; } }
 
+.about-block-mobile-desc__wrapper {
+  padding: 20px 0 30px 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  color: #14282F; }
+  .about-block-mobile-desc__wrapper h3 {
+    font-size: 16px;
+    line-height: 20px;
+    width: 356px;
+    text-align: center; }
+  .about-block-mobile-desc__wrapper p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 20px;
+    width: 356px;
+    text-align: center; }
+  @media (max-width: 750px) {
+    .about-block-mobile-desc__wrapper {
+      display: flex; } }
+
 .advantages-block__wrapper {
   padding: 30px 0 60px 0; }
   @media (max-width: 1080px) {
     .advantages-block__wrapper {
       padding: 30px 0 20px 0; } }
+  @media (max-width: 750px) {
+    .advantages-block__wrapper {
+      display: none; } }
 
 .advantages-block__content {
   color: #333333;
@@ -447,6 +471,37 @@ main, footer, header {
             font-weight: 400; }
             .advantages-block__content .advantages-block__content-col .advantages-block__content-card p:last-child {
               margin-bottom: 0; } }
+
+.advantages-block-mobile__wrapper {
+  display: none;
+  flex-direction: column;
+  align-items: center; }
+  .advantages-block-mobile__wrapper .slider-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 30px 0; }
+    .advantages-block-mobile__wrapper .slider-nav .arrow-left {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .advantages-block-mobile__wrapper .slider-nav .arrow-right {
+      position: absolute;
+      top: 0;
+      right: 0; }
+  .advantages-block-mobile__wrapper .slider-for {
+    color: #333;
+    text-align: center; }
+    .advantages-block-mobile__wrapper .slider-for h3 {
+      font-size: 22px;
+      line-height: 27px;
+      margin-bottom: 10px; }
+    .advantages-block-mobile__wrapper .slider-for p {
+      font-size: 12px;
+      line-height: 15px; }
+  @media (max-width: 750px) {
+    .advantages-block-mobile__wrapper {
+      display: flex; } }
 
 .product-presentation-block__wrapper {
   background: url(img/vector14.svg) 50% -110% no-repeat; }
@@ -571,7 +626,6 @@ main, footer, header {
         color: #333333;
         font-weight: 500;
         opacity: 0.3;
-        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         cursor: default;
         transition: all 0.3s ease-out; }
     .engineering-board-block__content .engineering-board-image .dot--1 {
