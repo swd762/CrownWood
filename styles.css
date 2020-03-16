@@ -495,7 +495,8 @@ main, footer, header {
     .advantages-block-mobile__wrapper .slider-for h3 {
       font-size: 22px;
       line-height: 27px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      font-weight: 600; }
     .advantages-block-mobile__wrapper .slider-for p {
       font-size: 12px;
       line-height: 15px; }
@@ -536,6 +537,20 @@ main, footer, header {
         margin-bottom: 40px;
         font-size: 16px;
         line-height: 20px; } }
+  @media (max-width: 750px) {
+    .product-presentation-block__content .product-presentation-block__content-title {
+      text-align: center; }
+      .product-presentation-block__content .product-presentation-block__content-title h2 {
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: 600;
+        margin: 20px 0; }
+      .product-presentation-block__content .product-presentation-block__content-title p {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0; }
+      .product-presentation-block__content .product-presentation-block__content-title .no-mobile {
+        display: none; } }
 .product-presentation-block__content .product-presentation-block__content-tile {
   display: grid;
   grid-template-columns: 345px 345px 340px;
@@ -586,6 +601,9 @@ main, footer, header {
         padding: 18px 18px; }
         .product-presentation-block__content .product-presentation-block__content-tile .image .product-title-marker br {
           display: block; } }
+  @media (max-width: 750px) {
+    .product-presentation-block__content .product-presentation-block__content-tile {
+      display: none; } }
 
 .engineering-board-block__wrapper {
   padding: 110px 0 63px 0;

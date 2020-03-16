@@ -637,6 +637,7 @@ main, footer, header {
       font-size: 22px;
       line-height: 27px;
       margin-bottom: 10px;
+      font-weight: 600;
     }
     p {
       font-size: 12px;
@@ -695,6 +696,23 @@ main, footer, header {
           font-size: 16px;
           line-height: 20px;
         }
+      }
+    }
+    @media (max-width: $mob) {
+      text-align: center;
+      h2 {
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: 600;
+        margin: 20px 0;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+      }
+      .no-mobile {
+        display: none;
       }
     }
   }
@@ -764,6 +782,9 @@ main, footer, header {
           padding: 18px 18px;
         }
       }
+    }
+    @media (max-width: $mob) {
+      display: none;
     }
   }
 }
@@ -862,10 +883,6 @@ main, footer, header {
       }
     }
   }
-  //.btn--tablet {
-  //  display: none;
-  //}
-
   .samples-block {
     margin: 0 0 40px 0;
     display: none;
@@ -909,12 +926,6 @@ main, footer, header {
     .btn {
       align-self: center;
     }
-    //.btn--desktop {
-    //  display: none;
-    //}
-    //.btn--tablet {
-    //  display: block;
-    //}
     .samples-block--tablet {
       display: flex;
     }
@@ -923,6 +934,8 @@ main, footer, header {
     }
   }
 }
+// Engineering block mobile
+
 
 // Modular parquet
 .modular-parquet-block__wrapper {
