@@ -296,6 +296,23 @@ main, footer, header {
       img {
         width: 100%;
       }
+      .slick-track {
+          margin: 0 -77px;
+      }
+      .slick-dots {
+        bottom: 12px;
+
+        li button:before {
+          font-size: 13px;
+          color: #fff;
+          opacity: 0.75;
+        }
+
+        li.slick-active button:before {
+          opacity: .75;
+          color: #FFB800;
+        }
+      }
     }
   }
   // **********
@@ -998,18 +1015,9 @@ main, footer, header {
 }
 // Engineering block mobile
 .engineering-board-mobile-block__wrapper {
-
-
   @media (max-width: $mob) {
     display: flex;
   }
-  .samples-slider {
-    .slick-track {
-      margin: 0 -77px;
-    }
-  }
-
-
 }
 
 
@@ -1070,8 +1078,6 @@ main, footer, header {
   }
   @media (max-width: $tablet) {
     display: block;
-    //flex-direction: column;
-    //justify-content: center;
   }
 }
 
@@ -1092,13 +1098,9 @@ main, footer, header {
 }
 // Engineering block mobile
 .modular-parquet-mobile-block__wrapper {
-
-
   @media (max-width: $mob) {
     display: flex;
   }
-
-
 }
 
 
@@ -1108,6 +1110,9 @@ main, footer, header {
   background: url(img/elka-top.jpg) 50% 100% no-repeat;
   @media (max-width: $tablet) {
     padding: 50px 0 150px 0;
+  }
+  @media (max-width: $mob) {
+    display: none;
   }
 }
 
@@ -1140,8 +1145,6 @@ main, footer, header {
     position: relative;
     .wood {
       position: relative;
-      //left: -75px;
-      //top: -30px;
     }
   }
   .samples-block {
@@ -1186,11 +1189,23 @@ main, footer, header {
     }
   }
 }
+// Massive board mobile
+.massive-board-mobile-block__wrapper {
+  
+  @media (max-width: $mob) {
+    display: flex;
+  }
+  
+}
+
 
 // elka parquet
 .elka-parquet-block__wrapper {
   height: 945px;
   background: url("img/elka-btm.jpg") 50% 0 no-repeat;
+  @media (max-width: $mob) {
+    display: none;
+  }
 }
 .elka-parquet-block__content {
   color: #fff;
@@ -1243,6 +1258,15 @@ main, footer, header {
     }
   }
 }
+// Parquet elka mobile
+.parquet-elka-mobile-block__wrapper {
+
+  @media (max-width: $mob) {
+    display: flex;
+  }
+
+}
+
 
 // Art parquet block
 .art-parquet-block__wrapper {
