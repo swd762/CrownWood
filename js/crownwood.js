@@ -28,4 +28,6 @@ $('.samples-slider').slick({
     // adaptiveHeight: true
 });
 
+$("a#single_image").fancybox();
+
 

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/fancybox/jquery.fancybox.css"/>
+
 </head>
 <body>
 <header class="main-header">
@@ -32,50 +34,51 @@
 
 </header>
 <main>
-    <div class="video-block__wrapper">
-        <div class="video-block__bg-container">
-            <video autoplay="autoplay" loop="loop" preload="auto" muted="muted">
-                <source src="img/crownwood.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="video-block__bg-overlay">
-
-        </div>
-        <div class="container add-height">
-            <div class="video-block__title">
-                <h1>Деревянные полы</h1>
-                <h2>гармония для жизни</h2>
-            </div>
+<!--Video banner-->
+<div class="video-block__wrapper">
+    <div class="video-block__bg-container">
+        <video autoplay="autoplay" loop="loop" preload="auto" muted="muted">
+            <source src="img/crownwood.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-block__bg-overlay">
+    </div>
+    <div class="container add-height">
+        <div class="video-block__title">
+            <h1>Деревянные полы</h1>
+            <h2>гармония для жизни</h2>
         </div>
     </div>
+</div>
+<!--***-->
 <!--About block-->
-    <div class="about-block__wrapper">
-        <div class="container">
-            <div class="about-block__content">
-                <section class="about_block__content-description">
-                    <h2>О нас</h2>
-                    <p>Мы&nbsp;занимаемся производством деревянных полов более 20&nbsp;лет. У&nbsp;нас сотни
-                        завершенных проектов высокой сложности и&nbsp;слаженая команда мастеров.
-                    </p>
-                    <p>Мы&nbsp;знаем: Напольное покрытие&nbsp;&mdash; это основа уюта и&nbsp;комфорта в&nbsp;доме.</p>
-                    <p>Именно поэтому мы&nbsp;обращаем особое внимание на&nbsp;проработку деталей и&nbsp;точность
-                        технологических процессов, а&nbsp;значит можем гарантировать надежность и&nbsp;долговечность наших полов.</p>
-                </section>
-                <div class="about_block__content-thumbnails">
-                    <img class="main-image" src="img/about-1.jpg" alt="about thumbnails">
-                    <div class="imgs-container">
-                        <img src="img/about-2.jpg" alt="about thumbnails" style="width: 166px;height: 166px">
-                        <img src="img/about-3.jpg" alt="about thumbnails" style="width: 127px;height: 127px">
-                        <img src="img/about-4.jpg" alt="about thumbnails" style="width: 90px; height: 90px">
-                    </div>
+<div class="about-block__wrapper">
+    <div class="container">
+        <div class="about-block__content">
+            <section class="about_block__content-description">
+                <h2>О нас</h2>
+                <p>Мы&nbsp;занимаемся производством деревянных полов более 20&nbsp;лет. У&nbsp;нас сотни
+                    завершенных проектов высокой сложности и&nbsp;слаженая команда мастеров.
+                </p>
+                <p>Мы&nbsp;знаем: Напольное покрытие&nbsp;&mdash; это основа уюта и&nbsp;комфорта в&nbsp;доме.</p>
+                <p>Именно поэтому мы&nbsp;обращаем особое внимание на&nbsp;проработку деталей и&nbsp;точность
+                    технологических процессов, а&nbsp;значит можем гарантировать надежность и&nbsp;долговечность наших полов.</p>
+            </section>
+            <div class="about_block__content-thumbnails">
+                <img class="main-image" src="img/about-1.jpg" alt="about thumbnails">
+                <div class="imgs-container">
+                    <img src="img/about-2.jpg" alt="about thumbnails" style="width: 166px;height: 166px">
+                    <img src="img/about-3.jpg" alt="about thumbnails" style="width: 127px;height: 127px">
+                    <img src="img/about-4.jpg" alt="about thumbnails" style="width: 90px; height: 90px">
                 </div>
             </div>
-            <p class="tablet-only" style="margin-top: 18px; font-size: 18px;">
-                Именно поэтому мы&nbsp;обращаем особое внимание на&nbsp;проработку деталей и&nbsp;точность
-                технологических процессов, а&nbsp;значит можем гарантировать надежность и&nbsp;долговечность наших полов.
-            </p>
         </div>
+        <p class="tablet-only" style="margin-top: 18px; font-size: 18px;">
+            Именно поэтому мы&nbsp;обращаем особое внимание на&nbsp;проработку деталей и&nbsp;точность
+            технологических процессов, а&nbsp;значит можем гарантировать надежность и&nbsp;долговечность наших полов.
+        </p>
     </div>
+</div>
 <!--***-->
 
 <!--About block mobile-->
@@ -303,7 +306,7 @@
                 </p>
                 <div class="engineering-board-image">
                     <img class="wood" src="img/engineering-board-1.png" alt="wood sample">
-                    <a class="dot dot--1" href="#">
+                    <a class="dot dot--1 " href="#">
                         <img src="img/dot.png" alt="yellow dot">
                         <p>Масло или лак, защищающий древесину от влаги и повреждений</p>
                     </a>
@@ -318,7 +321,7 @@
                 </div>
 
                 <div class="samples-block samples-block--tablet">
-                    <div class="sample-circle">
+                    <div class="sample-circle"  >
                         <div class="sub-circle">
                             <img src="img/engineering-board-2-tab.jpg" alt="samples pic">
                         </div>
@@ -339,7 +342,7 @@
 
                 <div class="circle-big circle-big--upper circle--no-tablet">
                     <img class="circle-bg" src="img/engineering-board-2.jpg" alt="flooring samples">
-                    <a class="dot" href="#"><img src="img/dot.png" alt="yellow dot"></a>
+                    <a class="dot" href="img/parquet-elka-slide-3.jpg" id="single_image"><img src="img/dot.png" alt="yellow dot"></a>
                 </div>
                 <div class="circle-mid circle-mid--upper circle--no-tablet">
                     <img class="circle-bg" src="img/engineering-board-3.jpg" alt="flooring samples">
@@ -529,7 +532,7 @@
         <p style="margin-top: 15px">Это теплый, комфортный, гипоалергенный и&nbsp;экологичный материал. При должном уходе массивная доска прослужит до&nbsp;50&nbsp;лет.</p>
     </section>
     <div class="board-img">
-        <img src="img/engineering-board-mob-2.png" alt="massive board sample">
+        <img src="img/massive-board-mob-1.png" alt="massive board sample">
     </div>
     <div class="samples-slider container">
         <div class="slide">
@@ -750,7 +753,9 @@
             естественная теплоотдача ценных пород дерева сделают помещение еще комфортнее.
         </p>
     </section>
-
+    <div class="board-img">
+        <img src="img/engineering-board-mob-2.png" alt="wall panels sample">
+    </div>
     <div class="samples-slider container">
         <div class="slide">
             <img src="img/wall-panels-slide-1.jpg" alt="wall panels slide">
@@ -807,10 +812,13 @@
         </div>
     </div>
 </footer>
+
+<!--Scripts load-->
 <script src="js/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+<script type="text/javascript" src="assets/fancybox/jquery.fancybox.js"></script>
 <script type="text/javascript" src="js/crownwood.js"></script>
-
+<!--***-->
 </body>
 </html>
 
