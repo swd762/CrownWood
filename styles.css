@@ -612,6 +612,9 @@ main, footer, header {
     .engineering-board-block__wrapper {
       padding: 40px 0 50px 0;
       background: none; } }
+  @media (max-width: 750px) {
+    .engineering-board-block__wrapper {
+      display: none; } }
 
 .engineering-board-block__content {
   display: flex;
@@ -710,6 +713,23 @@ main, footer, header {
       display: flex; }
     .engineering-board-block__content .circle--no-tablet {
       display: none; } }
+
+.engineering-board-mobile-block__wrapper .title-image {
+  position: relative; }
+  .engineering-board-mobile-block__wrapper .title-image img {
+    width: 100%; }
+  .engineering-board-mobile-block__wrapper .title-image .marker {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    text-align: center;
+    padding: 18px 0;
+    background-color: #FFB800;
+    position: absolute;
+    top: 35%;
+    width: 284px;
+    left: 50%;
+    margin-left: -142px; }
 
 .modular-parquet-block__wrapper {
   height: 1252px;

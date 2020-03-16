@@ -797,6 +797,9 @@ main, footer, header {
     padding: 40px 0 50px 0;
     background: none;
   }
+  @media (max-width: $mob) {
+    display: none;
+  }
 }
 
 .engineering-board-block__content {
@@ -935,6 +938,31 @@ main, footer, header {
   }
 }
 // Engineering block mobile
+.engineering-board-mobile-block__wrapper {
+
+  .title-image {
+    position: relative;
+    img {width: 100%}
+    .marker {
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 500;
+      text-align: center;
+      padding: 18px 0;
+      background-color: #FFB800;
+      position: absolute;
+      top: 35%;
+      width: 284px;
+      left: 50%;
+      margin-left: -142px;
+    }
+  }
+
+
+
+}
+
+
 
 
 // Modular parquet
