@@ -814,6 +814,9 @@ main, footer, header {
   @media (max-width: 1080px) {
     .mm-wrapper {
       height: 530px; } }
+  @media (max-width: 750px) {
+    .mm-wrapper {
+      display: none; } }
 
 .modular-parquet-block__content {
   background: transparent;

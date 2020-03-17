@@ -1070,7 +1070,9 @@ main, footer, header {
   height: 637px;
   @media (max-width: $tablet) {
     height: 530px;
-
+  }
+  @media (max-width: $mob) {
+    display: none;
   }
 }
 .modular-parquet-block__content {
