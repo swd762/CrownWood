@@ -330,8 +330,50 @@ main, footer, header {
 .mobile-header {
   display: none;
   height: 54px;
+  align-items: center;
+  position: relative;
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 10px;
+    a {
+      text-decoration: none;
+      color: $darker;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 10px;
+        opacity: 0.2;
+        font-weight: 600;
+      }
+    }
+  }
+  //.nav-wrapper {
+  //  position: relative;
+  //  background-color: $darker;
+  //  height: 614px;
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //}
+
+
+
   @media (max-width: $mob) {
-    display: block;
+    display: flex;
   }
 }
 
@@ -383,9 +425,6 @@ main, footer, header {
   transition: all .35s ease-in-out;
 }
 // ***
-
-
-
 
 .header__tel {
   justify-self: flex-end;
@@ -1562,6 +1601,7 @@ main, footer, header {
   .map-block__content-map {
     position: relative;
     width: 45%;
+    height: 540px;
     img {
       width: 100%;
     }

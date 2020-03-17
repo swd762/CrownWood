@@ -242,10 +242,29 @@ main, footer, header {
 
 .mobile-header {
   display: none;
-  height: 54px; }
+  height: 54px;
+  align-items: center;
+  position: relative; }
+  .mobile-header .navbar {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 10px; }
+    .mobile-header .navbar a {
+      text-decoration: none;
+      color: #14282F;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 500;
+      display: flex;
+      align-items: center; }
+      .mobile-header .navbar a span {
+        margin-left: 10px;
+        opacity: 0.2;
+        font-weight: 600; }
   @media (max-width: 750px) {
     .mobile-header {
-      display: block; } }
+      display: flex; } }
 
 .header {
   height: 100px;
@@ -1189,7 +1208,8 @@ main, footer, header {
   justify-content: flex-end; }
   .map-block__content .map-block__content-map {
     position: relative;
-    width: 45%; }
+    width: 45%;
+    height: 540px; }
     .map-block__content .map-block__content-map img {
       width: 100%; }
 
