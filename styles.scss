@@ -869,12 +869,14 @@ main, footer, header {
       grid-gap: 6px;
       .image {
         .product-title-marker {
+          top:30px;
           br {
             display: block;
+            //display: none;
           }
           font-size: 20px;
           line-height: 24px;
-          padding: 18px 18px;
+          padding: 16px 18px;
         }
       }
     }
@@ -1026,6 +1028,17 @@ main, footer, header {
     }
     .samples-block--tablet {
       display: flex;
+      .sample-circle .sub-circle {
+        position: relative;
+        .dot {
+          position: absolute;
+          left: 88px;
+          &:hover {
+            opacity: 0;
+            transition: all 0.35s ease-out;
+          }
+        }
+      }
     }
     .circle--no-tablet {
       display: none;
@@ -1211,6 +1224,17 @@ main, footer, header {
       .sample-circle {
         border: none;
       }
+      .sample-circle .sub-circle {
+        position: relative;
+        .dot {
+          position: absolute;
+          left: 88px;
+          &:hover {
+            opacity: 0;
+            transition: all 0.35s ease-out;
+          }
+        }
+      }
     }
     .massive-board-image {
       .wood {
@@ -1342,6 +1366,17 @@ main, footer, header {
     .samples-block {
       display: flex;
       margin-bottom: 50px;
+      .sample-circle .sub-circle {
+        position: relative;
+        a.dot {
+          position: absolute;
+          left: 88px;
+          &:hover {
+            opacity: 0;
+            transition: all 0.35s ease-out;
+          }
+        }
+      }
     }
     .btn {
       align-self: center;

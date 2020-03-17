@@ -670,9 +670,10 @@ main, footer, header {
       grid-template-rows: 164px 164px 164px;
       grid-gap: 6px; }
       .product-presentation-block__content .product-presentation-block__content-tile .image .product-title-marker {
+        top: 30px;
         font-size: 20px;
         line-height: 24px;
-        padding: 18px 18px; }
+        padding: 16px 18px; }
         .product-presentation-block__content .product-presentation-block__content-tile .image .product-title-marker br {
           display: block; } }
   @media (max-width: 750px) {
@@ -785,6 +786,14 @@ main, footer, header {
       align-self: center; }
     .engineering-board-block__content .samples-block--tablet {
       display: flex; }
+      .engineering-board-block__content .samples-block--tablet .sample-circle .sub-circle {
+        position: relative; }
+        .engineering-board-block__content .samples-block--tablet .sample-circle .sub-circle .dot {
+          position: absolute;
+          left: 88px; }
+          .engineering-board-block__content .samples-block--tablet .sample-circle .sub-circle .dot:hover {
+            opacity: 0;
+            transition: all 0.35s ease-out; }
     .engineering-board-block__content .circle--no-tablet {
       display: none; } }
 
@@ -922,6 +931,14 @@ main, footer, header {
       margin-bottom: 80px; }
       .massive-board-block__content .samples-block--tablet .sample-circle {
         border: none; }
+      .massive-board-block__content .samples-block--tablet .sample-circle .sub-circle {
+        position: relative; }
+        .massive-board-block__content .samples-block--tablet .sample-circle .sub-circle .dot {
+          position: absolute;
+          left: 88px; }
+          .massive-board-block__content .samples-block--tablet .sample-circle .sub-circle .dot:hover {
+            opacity: 0;
+            transition: all 0.35s ease-out; }
     .massive-board-block__content .massive-board-image .wood {
       left: 0;
       top: 0; } }
@@ -1015,6 +1032,14 @@ main, footer, header {
     .art-parquet-block__content .samples-block {
       display: flex;
       margin-bottom: 50px; }
+      .art-parquet-block__content .samples-block .sample-circle .sub-circle {
+        position: relative; }
+        .art-parquet-block__content .samples-block .sample-circle .sub-circle a.dot {
+          position: absolute;
+          left: 88px; }
+          .art-parquet-block__content .samples-block .sample-circle .sub-circle a.dot:hover {
+            opacity: 0;
+            transition: all 0.35s ease-out; }
     .art-parquet-block__content .btn {
       align-self: center; }
     .art-parquet-block__content .circle--no-tablet {
