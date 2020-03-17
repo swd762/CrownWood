@@ -370,6 +370,22 @@ main, footer, header {
     }
   }
 }
+// Styles for script "Yellow bar"
+.target {
+  position: absolute;
+  height: 24px;
+  width: 78px;
+  border-bottom: 6px solid $yellow;
+  top: 72px;
+}
+.active {
+  transition: all .35s ease-in-out;
+}
+// ***
+
+
+
+
 .header__tel {
   justify-self: flex-end;
   a {
