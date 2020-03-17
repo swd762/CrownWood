@@ -27,7 +27,16 @@ $('.samples-slider').slick({
     centerMode: false,
     // adaptiveHeight: true
 });
-
+// Initilize fancy box for #single_image
 $("a#single_image").fancybox();
+// ***
 
+// Slowly links transition
+$(".slowly").on("click", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1000);
+});
+// ***
 
