@@ -70,3 +70,11 @@ for (let i = 0; i <links.length ; i++) {
 }
 // ***
 
+// remove events from a.dots
+let no_dots = document.querySelectorAll('.dot-js');
+for (let i = 0; i <no_dots.length ; i++) {
+    no_dots[i].addEventListener('click', function (event) {
+    event.preventDefault();
+    });
+}
+// ***
