@@ -61,7 +61,9 @@ function mouseenterFunc() {
 }
 function mouseleaveFunc() {
     target.style.removeProperty('width');
-    target.style.removeProperty('transform');
+    // target.style.removeProperty('transform');
+    target.style.transform = `none`;
+    target.classList.remove('active');
 }
 
 for (let i = 0; i <links.length ; i++) {
