@@ -859,6 +859,9 @@ main {
       font-size: 12px;
       line-height: 15px;
     }
+    .slide {
+      padding: 0 15px;
+    }
   }
   @media (max-width: $mob) {
     display: flex;

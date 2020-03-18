@@ -668,6 +668,8 @@ main {
     .advantages-block-mobile__wrapper .slider-for p {
       font-size: 12px;
       line-height: 15px; }
+    .advantages-block-mobile__wrapper .slider-for .slide {
+      padding: 0 15px; }
   @media (max-width: 750px) {
     .advantages-block-mobile__wrapper {
       display: flex; } }
