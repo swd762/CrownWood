@@ -93,6 +93,25 @@ $(document).ready(function() {
 });
 // ***
 
+// Mobile menu script
+let trigger = document.querySelector('.menu-trigger');
+let popup = document.querySelector('.menu-popup');
+    trigger.addEventListener('click', function () {
+        if (!popup.classList.contains('active')) {
+            popup.style.display = 'flex';
+            document.getElementById('trigger-img').src='img/close.svg';
+            popup.classList.add('active');
+        } else {
+            popup.style.display = 'none';
+            document.getElementById('trigger-img').src='img/menu-mob.svg';
+            popup.classList.remove('active');
+        }
+
+    });
+
+
+// ***
+
 // Maps
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
