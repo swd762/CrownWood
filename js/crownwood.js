@@ -82,15 +82,15 @@ for (let i = 0; i <no_dots.length ; i++) {
 // ***
 
 // Up button initialize
-$(document).ready(function() {
-    let defaults = {
-        containerID: 'toTop', // fading element id
-        containerHoverID: 'toTopHover', // fading element hover id
-        scrollSpeed: 1200,
-        easingType: 'linear'
-    };
-    $().UItoTop({ easingType: 'easeOutQuart' });
-});
+// $(document).ready(function() {
+//     let defaults = {
+//         containerID: 'toTop', // fading element id
+//         containerHoverID: 'toTopHover', // fading element hover id
+//         scrollSpeed: 1200,
+//         easingType: 'linear'
+//     };
+//     $().UItoTop({ easingType: 'easeOutQuart' });
+// });
 // ***
 
 // Mobile menu script

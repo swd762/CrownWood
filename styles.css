@@ -10,9 +10,11 @@
 main, footer {
   overflow: hidden; }
 
-@media (max-width: 750px) {
-  main {
-    margin-top: 62px; } }
+main {
+  margin-top: 100px; }
+  @media (max-width: 750px) {
+    main {
+      margin-top: 62px; } }
 
 .clearfix:after {
   content: " ";
@@ -240,9 +242,17 @@ main, footer {
         opacity: .75;
         color: #FFB800; }
 
-@media (max-width: 750px) {
-  .main-header {
-    display: none; } }
+.main-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  box-shadow: 0 4px 4px 0 rgba(20, 40, 47, 0.25);
+  margin-bottom: 3px; }
+  @media (max-width: 750px) {
+    .main-header {
+      display: none; } }
 
 .mobile-header {
   display: none;
