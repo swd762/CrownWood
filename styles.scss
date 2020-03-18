@@ -1724,8 +1724,11 @@ main {
 }
 // map block mob
 .map-block-mobile__wrapper {
+  display: none;
   margin-top: 30px;
-
+  @media (max-width: $mob) {
+    display: block;
+  }
 }
 .map-block-mobile__header {
   color: $darker;

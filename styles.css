@@ -1311,7 +1311,11 @@ main {
     width: 45%; }
 
 .map-block-mobile__wrapper {
+  display: none;
   margin-top: 30px; }
+  @media (max-width: 750px) {
+    .map-block-mobile__wrapper {
+      display: block; } }
 
 .map-block-mobile__header {
   color: #14282F;
