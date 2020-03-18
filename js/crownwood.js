@@ -101,12 +101,13 @@ let popup = document.querySelector('.menu-popup');
             popup.style.display = 'flex';
             document.getElementById('trigger-img').src='img/close.svg';
             popup.classList.add('active');
+            // document.getElementsByClassName('body').classList.add('body-pointer');
         } else {
             popup.style.display = 'none';
             document.getElementById('trigger-img').src='img/menu-mob.svg';
             popup.classList.remove('active');
+            // document.getElementsByClassName('body').classList.remove('body-pointer');
         }
-
     });
 
 
