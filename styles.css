@@ -1252,6 +1252,10 @@ main {
     .extra-offer-mobile__wrapper {
       display: flex; } }
 
+@media (max-width: 750px) {
+  .map-block__wrapper {
+    display: none; } }
+
 .map-block__header {
   background-color: #666;
   color: #fff;
@@ -1307,6 +1311,7 @@ footer {
   background-color: #003333; }
 
 .footer-content {
+  padding: 0 10px;
   height: 51px;
   display: flex;
   align-items: center; }
@@ -1325,5 +1330,8 @@ footer {
     line-height: 22px;
     font-weight: 500;
     color: #A0A0A0; }
+  @media (max-width: 750px) {
+    .footer-content a:last-of-type {
+      margin-right: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */

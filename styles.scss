@@ -1653,7 +1653,9 @@ main {
 
 // Map block
 .map-block__wrapper {
-
+@media (max-width: $mob)  {
+  display: none;
+}
 }
 .map-block__header {
   background-color: #666;
@@ -1714,14 +1716,10 @@ main {
     }
   }
   .map-block__content-map {
-    //position: relative;
     width: 45%;
-    //height: 545px;
-    //img {
-    //  width: 100%;
-    //}
   }
 }
+
 
 
 // footer
@@ -1730,6 +1728,7 @@ footer {
   background-color: #003333;
 }
 .footer-content {
+  padding: 0 10px;
   height: 51px;
   display: flex;
   align-items: center;
@@ -1752,6 +1751,13 @@ footer {
     line-height: 22px;
     font-weight: 500;
     color: #A0A0A0;;
+  }
+  @media (max-width: $mob) {
+    a {
+      &:last-of-type {
+        margin-right: 20px;
+      }
+    }
   }
 }
 
