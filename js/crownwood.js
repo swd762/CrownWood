@@ -121,6 +121,7 @@ $(function() {
 
 // ***
 var myMap;
+var myMap1;
 
 // Дождёмся загрузки API и готовности DOM.
 ymaps.ready(init);
@@ -136,6 +137,15 @@ function init () {
     }, {
         searchControlProvider: 'yandex#search'
     });
+    myMap1 = new ymaps.Map('map1', {
+        // При инициализации карты обязательно нужно указать
+        // её центр и коэффициент масштабирования.
+        center: [55.76, 37.64], // Москва
+        zoom: 10
+    }, {
+        searchControlProvider: 'yandex#search'
+    });
 
     myMap.behaviors.disable('scrollZoom');
+    myMap1.behaviors.disable('scrollZoom');
 }

@@ -1678,6 +1678,9 @@ main {
   display: flex;
   justify-content: flex-end;
   height: 545px;
+  @media (max-width: $tablet) {
+    height: 525px;
+  }
   .map-block__content-col {
     overflow-y: scroll;
     padding: 58px 120px 0 0;
@@ -1718,6 +1721,25 @@ main {
   .map-block__content-map {
     width: 45%;
   }
+}
+// map block mob
+.map-block-mobile__wrapper {
+  margin-top: 30px;
+
+}
+.map-block-mobile__header {
+  color: $darker;
+  text-align: center;
+ h2 {
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 27px;
+   margin-bottom: 30px;
+ }
+}
+.map-block-mobile__map {
+  width: 100%;
+  height: 545px;
 }
 
 
