@@ -943,6 +943,7 @@ main {
       overflow:hidden;
       position: relative;
       cursor: pointer;
+
       .product-title-marker {
         br {
           display: none;
@@ -957,6 +958,7 @@ main {
         top:50px;
         left: 0;
         box-shadow: 0 4px 4px 0 rgba(20, 40, 47, 0.25);
+
       }
       &:hover {
         .product-title-marker {
@@ -964,6 +966,13 @@ main {
           color: $darker;
           transition: all 0.7s ease-out;
         }
+      }
+    }
+    div.title--small span {
+    
+      font-size: 22px;
+      @media (max-width: $tablet) {
+        font-size: 20px;
       }
     }
     .image img {

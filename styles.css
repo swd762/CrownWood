@@ -749,6 +749,11 @@ main {
       background-color: #FFB800;
       color: #14282F;
       transition: all 0.7s ease-out; }
+  .product-presentation-block__content .product-presentation-block__content-tile div.title--small span {
+    font-size: 22px; }
+    @media (max-width: 1080px) {
+      .product-presentation-block__content .product-presentation-block__content-tile div.title--small span {
+        font-size: 20px; } }
   .product-presentation-block__content .product-presentation-block__content-tile .image img {
     transition: all 0.7s ease-out; }
   .product-presentation-block__content .product-presentation-block__content-tile .image:hover img {
