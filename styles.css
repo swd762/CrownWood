@@ -10,6 +10,10 @@
 main, footer {
   overflow: hidden; }
 
+@media (max-width: 750px) {
+  main {
+    margin-top: 62px; } }
+
 .clearfix:after {
   content: " ";
   clear: both;
@@ -244,7 +248,13 @@ main, footer {
   display: none;
   height: 54px;
   align-items: center;
-  position: relative; }
+  box-shadow: 0 4px 4px 0 rgba(20, 40, 47, 0.25);
+  margin-bottom: 3px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  background: #fff; }
   .mobile-header .navbar {
     align-items: center;
     justify-content: space-between;
@@ -265,20 +275,25 @@ main, footer {
         margin-left: 10px;
         opacity: 0.2;
         font-weight: 600; }
+    .mobile-header .navbar .menu .menu-trigger img {
+      display: none; }
+    .mobile-header .navbar .menu .menu-trigger .active {
+      display: block; }
     .mobile-header .navbar .menu .menu-popup {
       display: none;
       flex-direction: column;
       align-items: center;
-      background: #2c2e3e;
+      background: #14282F;
       position: absolute;
       left: 0;
       right: 0;
       top: 50px;
-      padding: 60px 20px 30px 20px;
-      z-index: 9999;
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+      padding: 54px 20px 30px 20px;
+      z-index: 9999; }
       .mobile-header .navbar .menu .menu-popup a.mlogo {
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center; }
       .mobile-header .navbar .menu .menu-popup ul {
         display: flex;
         flex-direction: column;
@@ -426,6 +441,11 @@ main, footer {
   @media (max-width: 750px) {
     .about-block__wrapper {
       display: none; } }
+  .about-block__wrapper p.tablet-only {
+    display: none; }
+    @media (max-width: 1080px) {
+      .about-block__wrapper p.tablet-only {
+        display: block; } }
 
 .about-block__content {
   display: flex; }
@@ -704,9 +724,9 @@ main, footer {
     .product-presentation-block__content .product-presentation-block__content-tile .image:hover .product-title-marker {
       background-color: #FFB800;
       color: #14282F;
-      transition: all 1s ease-out; }
+      transition: all 0.7s ease-out; }
   .product-presentation-block__content .product-presentation-block__content-tile .image img {
-    transition: all 1s ease-out; }
+    transition: all 0.7s ease-out; }
   .product-presentation-block__content .product-presentation-block__content-tile .image:hover img {
     transform: scale(1.2); }
   .product-presentation-block__content .product-presentation-block__content-tile .wide {

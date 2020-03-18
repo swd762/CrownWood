@@ -94,23 +94,29 @@ $(document).ready(function() {
 // ***
 
 // Mobile menu script
-let trigger = document.querySelector('.menu-trigger');
-let popup = document.querySelector('.menu-popup');
-    trigger.addEventListener('click', function () {
-        if (!popup.classList.contains('active')) {
-            popup.style.display = 'flex';
-            document.getElementById('trigger-img').src='img/close.svg';
-            popup.classList.add('active');
-            // document.getElementsByClassName('body').classList.add('body-pointer');
-        } else {
-            popup.style.display = 'none';
-            document.getElementById('trigger-img').src='img/menu-mob.svg';
-            popup.classList.remove('active');
-            // document.getElementsByClassName('body').classList.remove('body-pointer');
-        }
+$(function() {
+    var $menu_popup = $('.menu-popup');
+
+    $(".menu-trigger").click(function(){
+        $menu_popup.slideToggle(300, function(){
+            $('.collapse-icon-js').toggleClass('active');
+            $('.close-icon-js').toggleClass('active');
+            if ($menu_popup.is(':hidden')) {
+                $('body').removeClass('body_pointer');
+            } else {
+                $('body').addClass('body_pointer');
+            }
+        });
+        return false;
     });
 
-
+    $(document).on('click', function(e){
+        if (!$(e.target).closest('.menu').length){
+            $('body').removeClass('body_pointer');
+            $menu_popup.slideUp(300);
+        }
+    });
+});
 // ***
 
 // Maps
