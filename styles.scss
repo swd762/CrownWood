@@ -1675,13 +1675,51 @@ main {
 .map-block__content {
   display: flex;
   justify-content: flex-end;
-  .map-block__content-map {
-    position: relative;
-    width: 45%;
-    height: 540px;
-    img {
-      width: 100%;
+  height: 545px;
+  .map-block__content-col {
+    overflow-y: scroll;
+    padding: 58px 120px 0 0;
+    @media (max-width: $tablet) {
+      padding-right: 30px;
+      padding-left: 10px;
     }
+
+    .stores-card {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      h4 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 10px;
+        img {
+          width: 13px;
+          height: 18px;
+          margin-right: 5px;
+        }
+      }
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration: underline;
+        margin-bottom: 10px;
+        &:last-of-type {
+          text-decoration: none;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .map-block__content-map {
+    //position: relative;
+    width: 45%;
+    //height: 545px;
+    //img {
+    //  width: 100%;
+    //}
   }
 }
 
