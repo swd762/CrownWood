@@ -225,7 +225,7 @@ main {
     font-weight: 500;
     margin: 20px 0;
     text-align: center;
-    padding: 0 10px; }
+    padding: 0 25px; }
   .product-mobile-template .samples-slider {
     margin: 20px 0; }
     .product-mobile-template .samples-slider img {
@@ -241,6 +241,20 @@ main {
       .product-mobile-template .samples-slider .slick-dots li.slick-active button:before {
         opacity: .75;
         color: #FFB800; }
+
+#styled-scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5; }
+
+#styled-scroll::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5; }
+
+#styled-scroll::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #A0A0A0; }
 
 .main-header {
   position: fixed;
@@ -880,6 +894,42 @@ main {
     .engineering-board-block__content .circle--no-tablet {
       display: none; } }
 
+.engineering-board-mobile-block__wrapper .board-img {
+  position: relative;
+  margin: 65px 0 15px 0; }
+  .engineering-board-mobile-block__wrapper .board-img a.dot {
+    position: absolute; }
+    .engineering-board-mobile-block__wrapper .board-img a.dot img {
+      width: 21px;
+      height: 21px; }
+    .engineering-board-mobile-block__wrapper .board-img a.dot p {
+      position: absolute;
+      text-decoration: none;
+      color: #333;
+      opacity: 0.5;
+      font-size: 12px;
+      line-height: 15px; }
+  .engineering-board-mobile-block__wrapper .board-img a.dot--1 {
+    top: 5px;
+    left: 65px; }
+    .engineering-board-mobile-block__wrapper .board-img a.dot--1 p {
+      top: -68px;
+      left: -38px;
+      width: 128px; }
+  .engineering-board-mobile-block__wrapper .board-img a.dot--2 {
+    top: 0;
+    left: 180px; }
+    .engineering-board-mobile-block__wrapper .board-img a.dot--2 p {
+      top: -63px;
+      left: 3px;
+      width: 164px; }
+  .engineering-board-mobile-block__wrapper .board-img a.dot--3 {
+    top: 46px;
+    right: 120px; }
+  .engineering-board-mobile-block__wrapper .board-img p {
+    top: 39px;
+    left: -149px;
+    width: 216px; }
 @media (max-width: 750px) {
   .engineering-board-mobile-block__wrapper {
     display: flex; } }
