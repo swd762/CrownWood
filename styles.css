@@ -1485,6 +1485,14 @@ div.feedback-modal-mobile {
   right: 0;
   left: 0;
   padding: 10px 0 0 0; }
+  div.feedback-modal-mobile button.fancybox-close-small {
+    display: none; }
+  div.feedback-modal-mobile a.close {
+    position: absolute;
+    top: 27px;
+    right: 27px;
+    width: 32px;
+    height: 32px; }
   div.feedback-modal-mobile .feedback-container {
     color: #fff;
     display: flex;
