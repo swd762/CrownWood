@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext");
+a:active, a:focus {
+  outline: none; }
+
+input, textarea {
+  outline: none; }
+
+input:active, textarea:active {
+  outline: none; }
+
+:focus {
+  outline: none; }
+
 * {
   box-sizing: border-box; }
 
@@ -330,6 +342,8 @@ a.anchored {
         display: flex;
         justify-content: center;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+        .mobile-header .navbar .menu .menu-popup a.mlogo img {
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
       .mobile-header .navbar .menu .menu-popup ul {
         display: flex;
         flex-direction: column;

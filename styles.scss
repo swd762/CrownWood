@@ -1,4 +1,9 @@
 
+a:active, a:focus { outline: none; }
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;} :focus {outline:none;}
+
+
 
 
 // Fonts
@@ -437,6 +442,9 @@ a.anchored {
           display: flex;
           justify-content: center;
           -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          img {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          }
         }
         ul {
           display: flex;
