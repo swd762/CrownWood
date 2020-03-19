@@ -436,6 +436,7 @@ a.anchored {
           margin-bottom: 12px;
           display: flex;
           justify-content: center;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
         ul {
           display: flex;

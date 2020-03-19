@@ -328,7 +328,8 @@ a.anchored {
       .mobile-header .navbar .menu .menu-popup a.mlogo {
         margin-bottom: 12px;
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
       .mobile-header .navbar .menu .menu-popup ul {
         display: flex;
         flex-direction: column;
