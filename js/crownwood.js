@@ -97,7 +97,7 @@ for (let i = 0; i <no_dots.length ; i++) {
 $(function() {
     var $menu_popup = $('.menu-popup');
 
-    $(".menu-trigger").click(function(){
+    $(".menu-trigger, .mob-link").click(function(){
         $menu_popup.slideToggle(300, function(){
             $('.collapse-icon-js').toggleClass('active');
             $('.close-icon-js').toggleClass('active');
@@ -107,7 +107,7 @@ $(function() {
                 $('body').addClass('body_pointer');
             }
         });
-        return false;
+        // return false;
     });
 
     $(document).on('click', function(e){
