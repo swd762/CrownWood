@@ -84,7 +84,10 @@
 <!--***-->
 
 <!--About block-->
-<div class="about-block__wrapper" id="about">
+    <a class="anchored">
+        <i id="about"></i>
+    </a>
+<div class="about-block__wrapper" >
     <div class="container">
         <div class="about-block__content">
             <section class="about_block__content-description">
@@ -275,7 +278,10 @@
 <!--***-->
 
 <!--Product presetnation block-->
-    <div class="product-presentation-block__wrapper" id="product">
+    <a class="anchored">
+        <i id="product"></i>
+    </a>
+    <div class="product-presentation-block__wrapper" >
         <div class="container">
             <div class="product-presentation-block__content">
                 <section class="product-presentation-block__content-title">
@@ -373,7 +379,7 @@
                     </div>
                 </div>
 
-                <a href="#" class="btn btn--light">Заказать расчет</a>
+                <a href="javascript:;" data-fancybox data-src="#feedback" class="btn btn--light">Заказать расчет</a>
 
                 <div class="circle-big circle-big--upper circle--no-tablet">
                     <img class="circle-bg" src="img/engineering-board-2.jpg" alt="flooring samples">
@@ -432,7 +438,7 @@
             
         </div>
 
-        <a href="#" class="btn btn--light">Заказать расчет</a>
+        <a href="javascript:" data-fancybox data-src="#feedback-mobile" class="btn btn--light">Заказать расчет</a>
         
     </div>
 <!--***-->
@@ -705,7 +711,7 @@
                 </div>
             </div>
 
-            <a href="#" class="btn btn--light">Связаться с дизайнером</a>
+            <a href="javascript:;" data-fancybox data-src="#feedback" class="btn btn--light">Связаться с дизайнером</a>
 
             <div class="circle-big circle-big--upper circle--no-tablet">
                 <img class="circle-bg" src="img/art-parquet-1.jpg" alt="flooring samples">
@@ -912,12 +918,38 @@
     </div>
 </footer>
 
-<!--<div class="fade">-->
-<!--</div>-->
-<!--<div class="modal-desktop">-->
+<!--Feedback modal-->
+<div class="feedback-modal" id="feedback">
+    <h4 class="popup-feedback-header">
+        Оставьте свой номер телефона и наш специалист свяжется с вами для уточнения деталей.
+    </h4>
+    <form class="" action="" method="POST">
+        <input  name="user_phone" type="tel" required placeholder="8 (000) 000-00-00">
+        <button class="button btn-sent" type="submit">Заказать обратный звонок</button>
+    </form>
+    <p>Нажимая кнопку “заказать звонок” вы соглашаетесь с возможностью обработки и хранения своих персональных данных</p>
+
+    <p data-fancybox-close class="close">ЗАКРЫТЬ</p>
+</div>
+<!--***-->
+
+<!--Feedback modal mobile-->
+<div class="feedback-modal-mobile" id="feedback-mobile">
+        <div class="feedback-container">
+            <a href="#" class="mlogo"><img src="img/logo-big.svg" alt=""></a>
+            <h4>
+                Оставьте свой номер телефона<br> и&nbsp;наш специалист свяжется с&nbsp;вами<br> для уточнения деталей.
+            </h4>
+            <form class="" action="" method="POST">
 
 
-<!--</div>-->
+                <input  name="user_phone" type="tel" required placeholder="8 (000) 000-00-00">
+                <button class="button btn-sent" type="submit">Заказать звонок</button>
+            </form>
+            <p>Нажимая кнопку “заказать звонок” вы соглашаетесь с возможностью обработки и хранения своих персональных данных</p>
+        </div>
+</div>
+<!--***-->
 
 
 
